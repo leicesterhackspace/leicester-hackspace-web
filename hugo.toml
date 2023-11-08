@@ -1,0 +1,14 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'hackspace-theme'
+
+[[menus.main]]
+name = 'hello'
+pageRef = '/hello-world.html'
+weight = 30
+
+[[menus.main]]
+name = 'hello2'
+pageRef = '/hello-world.html'
+weight = 20
