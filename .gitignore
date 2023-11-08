@@ -1,0 +1,22 @@
+# IDE files
+.idea
+.vscode
+
+# Node
+node_modules
+
+# Mac
+.DS_Store
+
+# Build Dirs
+dist
+tmp
+
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Temporary lock file while building
+/.hugo_build.lock
