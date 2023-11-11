@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://leicesterhackspace.org.uk'
+languageCode = 'en-GB'
+title = 'Leicester Hackspace'
 theme = 'hackspace-theme'
 
 [[menus.main]]
