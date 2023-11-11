@@ -19,7 +19,7 @@ If you have an existing interest in such projects, or wish to learn more, we hop
 
 Why not check out our virtual tour, created by Max Ruffels, one of our members. If you are still interested, check out the membership page for more information. 
 
-[//]: # (YouTube embed to https://youtu.be/kRIESLI5iy8 to go here)
+{{< youtube kRIESLI5iy8>}}
 
 Checkout the Diary Page to see forthcoming events.
 
