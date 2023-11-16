@@ -1,6 +1,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+{{- with resources.Get "img/hackspace-logo.svg" }}
+    <link rel="icon" href="{{.RelPermalink}}"/>
+{{- end }}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

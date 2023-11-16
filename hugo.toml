@@ -4,14 +4,46 @@ title = 'Leicester Hackspace'
 theme = 'hackspace-theme'
 
 [[menus.main]]
-name = 'hello'
-pageRef = '/hello-world.html'
+name = 'Home'
+pageRef = '/'
+weight = 10
+  [[menus.main.params]]
+    icon = 'img/hackspace-logo-inverted.svg'
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about.html'
+weight = 20
+
+[[menus.main]]
+name = 'Contacts'
+pageRef = '/contacts.html'
 weight = 30
 
 [[menus.main]]
-name = 'hello2'
-pageRef = '/hello-world.html'
-weight = 20
+name = 'News'
+pageRef = '/about.html'
+weight = 40
+
+[[menus.main]]
+name = 'Pictures'
+url = "https://www.flickr.com/groups/leicesterhackspace/pool/"
+weight = 50
+
+[[menus.main]]
+name = 'Membership'
+pageRef = '/membership.html'
+weight = 60
+
+[[menus.main]]
+name = 'Wiki'
+pageRef = '/wiki.html'
+weight = 70
+
+[[menus.main]]
+name = 'Diary'
+pageRef = '/diary.html'
+weight = 80
 
 [privacy]
   [privacy.youtube]
