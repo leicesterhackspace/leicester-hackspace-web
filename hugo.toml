@@ -37,7 +37,7 @@ weight = 60
 
 [[menus.main]]
 name = 'Wiki'
-pageRef = '/wiki.html'
+url = "http://wiki4.leicesterhackspace.org.uk"
 weight = 70
 
 [[menus.main]]
