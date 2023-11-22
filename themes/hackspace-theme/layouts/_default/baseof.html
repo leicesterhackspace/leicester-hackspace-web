@@ -7,11 +7,13 @@
   <header>
     {{ partial "header.html" . }}
   </header>
-  <main>
+  <main class="container">
     {{ block "main" . }}{{ end }}
   </main>
   <footer>
-    {{ partial "footer.html" . }}
+    <div class="container">
+      {{ partial "footer.html" . }}
+    </div>
   </footer>
 </body>
 </html>

@@ -56,8 +56,22 @@ body {
 
   main {
     width: 100%;
-    margin: 0 auto;
     padding: 10px;
+  }
+
+  footer {
+    border-top: 1px solid #222;
+    margin-top: 1rem;
+
+    background-color: #2c2c2c;
+    color: white;
+
+    height: 100px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: calc(100% - 20px);
 
     @media (min-width: 576px) {
       max-width: 540px;
@@ -76,14 +90,8 @@ body {
     }
   }
 
-  footer {
-    border-top: 1px solid #222;
-    margin-top: 1rem;
-  }
-
   a {
     color: #00e;
     text-decoration: none;
   }
-
 }
