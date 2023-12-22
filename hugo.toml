@@ -22,7 +22,7 @@ weight = 30
 
 [[menus.main]]
 name = 'News'
-pageRef = '/about.html'
+pageRef = '/news.html'
 weight = 40
 
 [[menus.main]]

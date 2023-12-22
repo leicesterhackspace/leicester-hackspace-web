@@ -1,8 +1,20 @@
 {{ define "main" }}
   <h1 class="header">{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
-{{ end }}
+
+  {{- $paginator := .Paginate (where .Site.Pages "Type" "posts") 5 -}}
+  {{- range $paginator.Pages -}}
+    <div class="news-post">
+      <h2>{{ .Title }}</h2>
+      {{ .Content }}
+      <div class="news-footer">
+        <span class="date">
+          {{- $date := .Date -}}
+          {{- $lastmod := .Lastmod -}}
+          {{- .Date.Format "_2 January 2006" -}}
+          {{ if ne $date $lastmod }} (Modified: {{ .Lastmod.Format "3:04  PM _2/01/2006" }}){{ end }}
+        </span>
+      </div>
+    </div>
+  {{- end -}}
+{{- end -}}

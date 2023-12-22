@@ -1,16 +1,14 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
+languageCode = 'en-gb'
 title = 'My New Hugo Site'
+
+[params]
+paginate = 5
 
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
 weight = 10
-
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
 
 [[menus.main]]
 name = 'Tags'
