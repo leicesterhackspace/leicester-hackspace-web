@@ -7,7 +7,7 @@
   <header>
     {{ partial "header.html" . }}
   </header>
-  <main class="container">
+  <main class="container{{ with .Type }} {{ . }}{{ end }}">
     {{ block "main" . }}{{ end }}
   </main>
   <footer>

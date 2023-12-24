@@ -1,0 +1,6 @@
+<!-- Adapted from svg shortcode, as you don't seem to be able to call shortcodes from shortcodes -->
+
+<!-- Simple short code that embeds an SVG from the icon subdirectory -->
+{{ $icon := .Get 0 }}
+{{ $path := printf "icons/%s.svg" $icon}}
+{{ $path | readFile | safeHTML }}

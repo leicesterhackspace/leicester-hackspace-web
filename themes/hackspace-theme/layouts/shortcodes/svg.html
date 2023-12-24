@@ -1,4 +1,5 @@
-<!--Sourced from https://discourse.gohugo.io/t/solved-inject-an-svg-file-into-my-html/7446/10-->
+<!-- Sourced from https://discourse.gohugo.io/t/solved-inject-an-svg-file-into-my-html/7446/10 -->
 
-{{$svg := .Get 0}}
+<!-- Simple short code that embeds an SVG -->
+{{ $svg := .Get 0 }}
 {{ $svg  | readFile | safeHTML }}

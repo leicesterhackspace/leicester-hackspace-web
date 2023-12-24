@@ -2,19 +2,64 @@
   <h1 class="header">{{ .Title }}</h1>
   {{ .Content }}
 
-  {{- $paginator := .Paginate (where .Site.Pages "Type" "posts") 5 -}}
+  {{- $paginator := .Paginate (where .Site.Pages "Type" "posts") .Site.Params.Pagination.pages -}}
   {{- range $paginator.Pages -}}
     <div class="news-post">
-      <h2>{{ .Title }}</h2>
+      <h1>{{ .Title }}</h1>
       {{ .Content }}
       <div class="news-footer">
         <span class="date">
           {{- $date := .Date -}}
           {{- $lastmod := .Lastmod -}}
           {{- .Date.Format "_2 January 2006" -}}
-          {{ if ne $date $lastmod }} (Modified: {{ .Lastmod.Format "3:04  PM _2/01/2006" }}){{ end }}
+          {{ if ne $date $lastmod }} (Modified: {{ .Lastmod.Format "3:04 PM _2/01/2006" }}){{ end }}
         </span>
       </div>
+    </div>
+  {{- end -}}
+
+  {{ $paginator := .Paginator }}
+
+  <!-- If there's more than one page -->
+  {{- if gt $paginator.TotalPages 1 -}}
+    <div class="pagination">
+      <!-- First page. -->
+      <a class="pagination-first" {{ if ne $paginator.PageNumber 1 }}href="{{ $paginator.First.URL }}"{{ end }}>
+        {{ "static/icons/fas-angles-left.svg" | readFile | safeHTML }}
+      </a>
+
+
+      <!-- Previous page -->
+      <a class="pagination-previous" {{ with $paginator.Prev }}href="{{ .URL }}"{{ end }}>
+        {{ "static/icons/fas-angle-left.svg" | readFile | safeHTML }}
+      </a>
+
+      <!-- Page numbers. -->
+      {{- $minPage := (sub $paginator.PageNumber $.Site.Params.Pagination.adjacentLinks 1) -}}
+      {{- $maxPage := (add $paginator.PageNumber .Site.Params.Pagination.adjacentLinks 1) -}}
+
+      {{- $minPage := cond (ge $maxPage $paginator.Pagers) (sub $minPage (sub $maxPage (len $paginator.Pagers))) $minPage -}}
+      {{- $maxPage := cond (le $minPage 0) (add $maxPage (mul $minPage -1) 1) $maxPage -}}
+
+      {{- range $paginator.Pagers -}}
+        {{- if and (ge .PageNumber $minPage) (le .PageNumber $maxPage) -}}
+          {{- if eq .PageNumber $minPage $maxPage -}}
+            <a class="pagination-link">...</a>
+          {{- else -}}
+            <a class="pagination-link" {{ if ne $paginator.PageNumber .PageNumber }}href="{{ .URL }}"{{ end }}>{{.PageNumber }}</a>
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      <!-- Next page. -->
+      <a class="pagination-next" {{ with $paginator.Next }}href="{{ .URL }}"{{ end }}>
+        {{ "static/icons/fas-angle-right.svg" | readFile | safeHTML }}
+      </a>
+
+      <!-- Last page. -->
+      <a class="pagination-last" {{ if ne $paginator.PageNumber $paginator.TotalPages }}href="{{ $paginator.Last.URL }}"{{ end }}>
+        {{ "static/icons/fas-angles-right.svg" | readFile | safeHTML }}
+      </a>
     </div>
   {{- end -}}
 {{- end -}}
