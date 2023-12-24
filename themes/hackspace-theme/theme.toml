@@ -1,31 +1,20 @@
-name = 'Theme name'
+name = 'Leicester Hackspace Theme'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
+licenselink = 'https://github.com/leicesterhackspace/leicester-hackspace-web/blob/master/themes/hackspace-theme/LICENSE'
 description = 'Theme description'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = 'https://github.com/leicesterhackspace/leicester-hackspace-web'
 
 # If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+#demosite = ''
 
 # Taxonomy terms
-tags = ['blog', 'company']
-features = ['some', 'awesome', 'features']
+tags = ['hackspace', 'news']
+features = ['Responsive layout', 'Paginated news page']
 
 # If the theme has multiple authors
 authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
+  {name = 'Jacob Lucas', homepage = 'jacob-lucas.uk'},
+  {name = 'Daniel Warren'}
 ]
-
-# If the theme has a single author
-[author]
-  name = 'Your name'
-  homepage = 'Your website'
-
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'

@@ -1,10 +1,10 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://https://leicesterhackspace.org.uk/'
 languageCode = 'en-gb'
-title = 'My New Hugo Site'
+title = 'The theme for the leicester hackspace website'
 
 [params.pagination]
 # The maximum number of posts on each page of the pagination
-postsPerPage = 1
+postsPerPage = 5
 
 # The number of page links on the pagination pages bar to have either side of the current page
 adjacentLinks = 5
