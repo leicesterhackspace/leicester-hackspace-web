@@ -2,7 +2,7 @@
   <h1 class="header">{{ .Title }}</h1>
   {{ .Content }}
 
-  {{- $paginator := .Paginate (where .Site.Pages "Type" "posts") .Site.Params.Pagination.pages -}}
+  {{- $paginator := .Paginate (where .Site.Pages "Type" "posts") .Site.Params.Pagination.postsPerPage -}}
   {{- range $paginator.Pages -}}
     <div class="news-post">
       <h1>{{ .Title }}</h1>
@@ -43,7 +43,7 @@
 
       {{- range $paginator.Pagers -}}
         {{- if and (ge .PageNumber $minPage) (le .PageNumber $maxPage) -}}
-          {{- if eq .PageNumber $minPage $maxPage -}}
+          {{- if and (eq .PageNumber $minPage $maxPage) (ne .PageNumber 1 $paginator.TotalPages) -}}
             <a class="pagination-link">...</a>
           {{- else -}}
             <a class="pagination-link" {{ if ne $paginator.PageNumber .PageNumber }}href="{{ .URL }}"{{ end }}>{{.PageNumber }}</a>

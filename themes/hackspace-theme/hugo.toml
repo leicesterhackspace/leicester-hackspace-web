@@ -3,11 +3,11 @@ languageCode = 'en-gb'
 title = 'My New Hugo Site'
 
 [params.pagination]
-# The number of pages to list in the pagination
-pages = 1
+# The maximum number of posts on each page of the pagination
+postsPerPage = 1
 
 # The number of page links on the pagination pages bar to have either side of the current page
-adjacentLinks = 2
+adjacentLinks = 5
 
 
 [[menus.main]]
