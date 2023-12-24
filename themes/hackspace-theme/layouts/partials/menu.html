@@ -12,7 +12,16 @@ Renders a menu for the given menu ID.
 
 {{- with index site.Menus $menuID }}
   <nav>
-    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    <div id="nav-mobile">
+      {{- with resources.Get "img/hackspace-logo-inverted.svg" -}}
+        {{ (. | minify).Content | safeHTML }}
+      {{- end -}}
+
+      {{ "static/icons/fas-bars.svg" | readFile | safeHTML }}
+    </div>
+    <div id="nav-wrap">
+      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    </div>
   </nav>
 {{- end }}
 

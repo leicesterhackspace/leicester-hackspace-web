@@ -7,7 +7,7 @@
   <header>
     {{ partial "header.html" . }}
   </header>
-  <main class="container{{ with .Type }} {{ . }}{{ end }}">
+  <main class="container{{ with .Type }} {{ . }}{{ end }}{{ with .Title }} {{ lower . }}{{ end }}">
     {{ block "main" . }}{{ end }}
   </main>
   <footer>
@@ -15,5 +15,8 @@
       {{ partial "footer.html" . }}
     </div>
   </footer>
+  <script>
+    registerNav();
+  </script>
 </body>
 </html>

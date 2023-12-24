@@ -5,7 +5,7 @@
 {{- $width := or (.Get "width") "600" -}}
 {{- $height := or (.Get "height") "450" -}}
 {{- $attr := "" -}}
-{{- if .Get "attributes" -}}
-    {{- $attr = .Get "attributes" | safe.HTMLAttr -}}
+{{- with .Get "attributes" -}}
+    {{- $attr = . | safe.HTMLAttr -}}
 {{- end -}}
 <iframe src="{{ $src }}" width="{{ $width }}" height="{{ $height }}" style="border:0;" {{ $attr }}></iframe>
