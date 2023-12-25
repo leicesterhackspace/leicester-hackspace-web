@@ -80,11 +80,10 @@ body {
     }
   }
 
-  @import "./list.scss";
-  @import "./diary.scss";
-
   a {
     color: #00e;
     text-decoration: none;
   }
+
+  @import "./list.scss";
 }

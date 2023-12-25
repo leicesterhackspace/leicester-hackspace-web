@@ -2,12 +2,17 @@ baseURL = 'https://https://leicesterhackspace.org.uk/'
 languageCode = 'en-gb'
 title = 'The theme for the leicester hackspace website'
 
-[params.pagination]
-# The maximum number of posts on each page of the pagination
-postsPerPage = 5
+[params]
+# The image at the front of the navbar
+siteImage = "/assets/img/icon.svg"
+# The favicon
+siteFavIcon = "/assets/img/icon.svg"
+  [params.pagination]
+  # The maximum number of posts on each page of the pagination
+  postsPerPage = 5
 
-# The number of page links on the pagination pages bar to have either side of the current page
-adjacentLinks = 5
+  # The number of page links on the pagination pages bar to have either side of the current page
+  adjacentLinks = 3
 
 
 [[menus.main]]

@@ -1,0 +1,14 @@
+.diary {
+  .desktop {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mobile {
+    height: 60vh;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

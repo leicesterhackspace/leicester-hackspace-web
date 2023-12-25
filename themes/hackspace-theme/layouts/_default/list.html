@@ -2,7 +2,7 @@
   <h1 class="header">{{ .Title }}</h1>
   {{ .Content }}
 
-  {{- $paginator := .Paginate (where .Site.Pages "Type" "posts") .Site.Params.Pagination.postsPerPage -}}
+  {{- $paginator := .Paginate (where .Data.Pages "Type" "posts") .Site.Params.Pagination.postsPerPage -}}
   {{- range $paginator.Pages -}}
     <div class="news-post">
       <h1>{{ .Title }}</h1>

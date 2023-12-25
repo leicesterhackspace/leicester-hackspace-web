@@ -3,6 +3,10 @@ languageCode = 'en-GB'
 title = 'Leicester Hackspace'
 theme = 'hackspace-theme'
 
+[params]
+siteImage = "/img/hackspace-logo-inverted.svg"
+siteFavIcon = "/img/hackspace-logo.svg"
+
 [[menus.main]]
 name = 'Home'
 pageRef = '/'

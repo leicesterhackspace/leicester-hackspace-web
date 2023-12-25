@@ -1,11 +1,17 @@
 {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
+{{ $opts2 := dict "transpiler" "dartsass" "targetPath" "css/custom.css" }}
 {{- with resources.Get "sass/main.scss" }}
+  {{- $css :=  . | toCSS $opts }}
+
+  {{- with resources.Get "sass/custom.scss" }}
+    {{- $custom := . | toCSS $opts2 }}
+    {{- $css = slice $css $custom | resources.Concat "css/style.css"}}
+  {{- end }}
+
   {{- if eq hugo.Environment "development" }}
-    {{- with . | toCSS $opts }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-    {{- end }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{- else }}
-    {{- with . | toCSS $opts | minify | fingerprint }}
+    {{- with css | minify | fingerprint }}
       <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
     {{- end }}
   {{- end }}

@@ -13,7 +13,7 @@ Renders a menu for the given menu ID.
 {{- with index site.Menus $menuID }}
   <nav>
     <div id="nav-mobile">
-      {{- with resources.Get "img/hackspace-logo-inverted.svg" -}}
+      {{- with resources.Get site.Params.siteImage -}}
         {{ (. | minify).Content | safeHTML }}
       {{- end -}}
 
