@@ -26,7 +26,7 @@ We don’t have a fixed monthly membership fee. Please donate what you feel is a
 ## OK, I’m in! {.header}
 Great! Fill in your Leicester Hackspace membership form (available at the Hackspace) and either set up a standing order (details on the form) or make a monthly PayPal donation using the button below. **Standing order is our preferred method of payment because it does not incur fees.** If you do use PayPal please add 60p for every £10 you donate to cover processing fees. Remember to make your Pay Pal donation a recurring, monthly, payment. Email **[membership@leicesterhackspace.org.uk](mailto:membership@leicesterhackspace.org.uk)** for more information or to arrange a tour 
 
-<!-- {{ donate }} -->
+{{< donation >}}
 
 ## Lapsed Membership {.header}
 Once you stop making your monthly donation your membership will be seen as lapsed and you will be asked to return your key fob and remove your storage box. If you are unable to make a monthly donation, but still wish to remain a member then please talk to us. 
