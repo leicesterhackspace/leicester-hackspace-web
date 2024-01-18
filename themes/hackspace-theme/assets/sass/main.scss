@@ -78,6 +78,29 @@ body {
         border: 0;
       }
     }
+
+    .animate-fade {
+      animation: 750ms ease-in-out;
+    }
+
+    .img-container {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      
+      @media (min-width: 992px) {
+        width: 75%;
+      }
+
+      @media (min-width: 1200px) {
+        width: 50%;
+      }
+    }
+
+    .img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   a {
