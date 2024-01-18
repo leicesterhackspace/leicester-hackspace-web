@@ -1,7 +1,6 @@
 +++
 title = 'About'
 date = 2023-11-16T20:35:13Z
-draft = true
 +++
 The Hackspace is essentially a shared workshop run by the members for the members.
 
@@ -43,14 +42,14 @@ Members can volunteer to help with other tasks such as:
 
 Since its opening in 2014 Leicester Hackspace has had 3 locations. Each move has given us more space to accomodate an increase in Membership and space for more equipment. 
 
-![hackspace-3.0](/img/placeholder.jpg)
+{{< img src="img/hackspace-3.0.jpg" title="Version 3.0 of the Hackspace" >}}
 
 In December 2017 we moved to premises on the Faircharm Trading Estate. This gave us space for heavy duty woodworking equipment and the prospects of a Laser Cutter. 
 
-![hackspace-2.0](/img/placeholder.jpg)
+{{< img src="img/hackspace-2.0.jpg" title="Version 2.0 of the Hackspace" >}}
 
 Previously we had been at the De Montfort University Innovation Centre.
 
-![hackspace-1.0](/img/placeholder.jpg)
+{{< img src="img/hackspace-1.0.png" title="Version 1.0 of the Hackspace" >}}
 
 The first premises shown above were at the Makers Yard on Rutland St.

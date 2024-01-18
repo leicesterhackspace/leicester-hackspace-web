@@ -1,7 +1,6 @@
 +++
 title = 'Membership'
 date = 2023-11-16T20:38:29Z
-draft = true
 +++
 ## Become a Member {.header}
 Leicester Hackspace is funded entirely by it’s members. Every month we need to pay our rent, insurance, internet and electricity bills, plus we try to raise money for equipment. Our main source of income is membership fees. 
