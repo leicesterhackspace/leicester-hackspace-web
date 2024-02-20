@@ -8,22 +8,23 @@
 {{- $imgClass := "img animate-fade" -}}
 {{- $sizesAttr := "(min-width: 1200px) 1460px, (max-width: 365px) 365px, (max-width: 550px) 550px,  730px" -}}
 {{- $imgBase := or (.Get "imgBase") "" -}}
-{{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}
+{{- $src := printf "%s%s" $imgBase (.Get "src") -}}
+{{- $img := or (.Page.Resources.Get $src) (resources.Get $src) -}}
 {{- $alt := .Get "alt" -}}
 {{/* ---------------- */}}
-{{- if $src -}}
+{{- if $img -}}
 {{/*
 	Create a 640-pixel-wide JPG of the image that will serve 
     as the "fallback" image for that tiny percentage of browsers 
     that don't understand the HTML `picture` tag.
 */}}
-{{- $fallbackImg := $src.Resize "640x jpg" -}}
+{{- $fallbackImg := $img.Resize "640x jpg" -}}
 {{/*
     LQIP = Low Quality Image Placeholder
 	Create a 20-pixel-wide LQIP and turn it into Base64-encoded data, 
     which is better for performance and caching.
 */}}
-{{- $LQIP_img := $src.Resize "20x jpg" -}}
+{{- $LQIP_img := $img.Resize "20x jpg" -}}
 {{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
 {{- $LQIP_css := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 <div class="relative bg-center img-container" style="{{ $LQIP_css | safeCSS }}">
@@ -33,7 +34,7 @@
             srcset="
             {{- with $sizes -}}
                 {{- range $i, $e := . -}}
-                    {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " webp") ).RelPermalink }} {{ . }}w
+                    {{- if $i }}, {{ end -}}{{- ($img.Resize (printf "%sx%s" . " webp") ).RelPermalink }} {{ . }}w
                 {{- end -}}
             {{- end -}}"
             sizes="{{ $sizesAttr }}"
@@ -43,7 +44,7 @@
             srcset="
             {{- with $sizes -}}
                 {{- range $i, $e := . -}}
-                    {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " jpg") ).RelPermalink }} {{ . }}w
+                    {{- if $i }}, {{ end -}}{{- ($img.Resize (printf "%sx%s" . " jpg") ).RelPermalink }} {{ . }}w
                 {{- end -}}
             {{- end -}}"
             sizes="{{ $sizesAttr }}"
