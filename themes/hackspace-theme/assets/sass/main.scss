@@ -97,9 +97,32 @@ body {
       }
     }
 
-    .img {
+    .img-container.left-align {
+      margin-left: 0;
+      display: inline-block;
+    }
+    
+    .img-container.right-align {
+      margin-right: 0;
+      display: inline-block;
+    }
+
+    .img-container.center-align {
+      display: inline-block;
+    }
+
+    .img, .optimg {
       width: 100%;
       height: auto;
+    }
+
+    .img-group {
+      display: flex;
+      flex-wrap: wrap;
+
+      .img-container {
+        display: inline-block;
+      }
     }
   }
 

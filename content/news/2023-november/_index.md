@@ -8,5 +8,4 @@ It attracted quite a bit of interest, from running Scratch to FFT analysis and t
 Had a few problems with the latter but the issue has been sorted.
 Hopefully one of the PI's will now be used in PI wars. 
 
-{{< img src="js.jpg" alt="?" >}}  
-{{< img src="scratch1.jpg" alt="?" >}}
+{{< groupimg width="420" >}}
