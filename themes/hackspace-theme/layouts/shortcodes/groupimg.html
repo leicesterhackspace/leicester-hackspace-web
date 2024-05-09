@@ -12,7 +12,7 @@
 <div class="img-group">
 {{- range .Page.Resources.ByType "image" -}}
 {{- if not (collections.In $ignore .Name) -}}
-{{- $width := math.Min $widthParam .Width -}}
+{{- $width := cast.ToString (math.Min $widthParam .Width) -}}
 {{/*
 	Create a 640-pixel-wide JPG of the image that will serve 
     as the "fallback" image for that tiny percentage of browsers 
@@ -29,14 +29,14 @@
 {{- $LQIP_css := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-repeat: no-repeat; width: fit-content; height: fit-content; " -}}
 <div class="bg-center img-container" style="{{ $LQIP_css | safeCSS }}">
     <picture>
-        {{/*  <source
+        <source
             type="image/webp"
             srcset="{{ (.Resize (printf "%sx%s" $width " webp")).RelPermalink }}"
-        />  */}}
-        {{/*  <source
+        />
+        <source
             type="image/jpeg"
             srcset="{{ (.Resize (printf "%sx%s" $width " jpeg")).RelPermalink }}"
-        />  */}}
+        />
         <img class="{{ $imgClass }}"
             style="max-width: {{ $width }}px"
             src="{{ $fallbackImg.RelPermalink }}"
