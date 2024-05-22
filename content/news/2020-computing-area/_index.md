@@ -10,4 +10,4 @@ All PC's have design software, 3D printing slicers, software development package
 
 They were recently successfully used by our second code club session.
 
-{{< img src="computerArea.jpg" alt="?" >}}
+{{< groupimg width="700" >}}

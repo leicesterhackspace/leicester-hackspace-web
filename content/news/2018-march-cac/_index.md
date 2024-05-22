@@ -10,37 +10,23 @@ More can be found on the facebook site at [https://www.facebook.com/pg/creatacon
 
 Aaron and Divya brought the sand box which always attracts a large number of visitors. 
 
-{{< img src="sand1.jpg" alt="?" >}}
-
-{{< img src="sand2.jpg" alt="?" >}}
-
-{{< img src="sand3.jpg" alt="?" >}}
+{{< groupimg width="400" ignore="3d1.jpg,3d2.jpg,tony1.jpg,tony2.jpg,tony3.jpg,robot1.jpg,robot2.jpg,robot3.jpg,fix1.jpg">}}
 
 Keith, Aaron and Matt demonstrated several of our 3D printers.
 
-{{< img src="3d1.jpg" alt="?" >}}
-
-{{< img src="3d2.jpg" alt="?" >}}
+{{< groupimg width="400" ignore="sand1.jpg,sand2.jpg,sand3.jpg,tony1.jpg,tony2.jpg,tony3.jpg,robot1.jpg,robot2.jpg,robot3.jpg,fix1.jpg">}}
 
 Tony and Bruce demonstrated their spark machines and BBC computer 
 
-{{< img src="tony1.jpg" alt="?" >}}
-
-{{< img src="tony2.jpg" alt="?" >}}
-
-{{< img src="tony3.jpg" alt="?" >}}
+{{< groupimg width="400" ignore="sand1.jpg,sand2.jpg,sand3.jpg,3d1.jpg,3d2.jpg,robot1.jpg,robot2.jpg,robot3.jpg,fix1.jpg">}}
 
 Steve and Russ brought along their Raspberry PI robots and home automation demonstrations
 
-{{< img src="robot1.jpg" alt="?" >}}
-
-{{< img src="robot2.jpg" alt="?" >}}
-
-{{< img src="robot3.jpg" alt="?" >}}
+{{< groupimg width="400" ignore="sand1.jpg,sand2.jpg,sand3.jpg,3d1.jpg,3d2.jpg,tony1.jpg,tony2.jpg,tony3.jpg,fix1.jpg">}}
 
 Last but not least Marie and John were there from Leicester Fixers.
 
-{{< img src="fix1.jpg" alt="?" >}}
+{{< groupimg width="400" ignore="sand1.jpg,sand2.jpg,sand3.jpg,3d1.jpg,3d2.jpg,tony1.jpg,tony2.jpg,tony3.jpg,robot1.jpg,robot2.jpg,robot3.jpg">}}
 
 We always have a good attendance at Creat-A-Con from Hackspace members, easily filling a room to ourselves. 
 Hopefully we will also attract some new members. 

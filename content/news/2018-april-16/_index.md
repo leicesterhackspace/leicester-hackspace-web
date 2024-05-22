@@ -11,4 +11,4 @@ All connected using crocodile clips.
 
 I wonder what the next one will be?
 
-{{< img src="billRobot.jpg" alt="?" >}}
+{{< groupimg width="730" >}}

@@ -9,10 +9,4 @@ We also had other great stuff to show off: Matt's 3D printer, a whole section de
 Tony's Wimshurst machine produced some great sparks and was a source of great fascination to visitors who had never had the chance to learn about static electricity at school. 
 Thanks to those who attended and all those who did the hard work to make it a great success.
 
-{{< img src="CreatACon_0.jpg" alt="?" >}}
-
-{{< img src="CreatACon_1.jpg" alt="?" >}}
-
-{{< img src="CreatACon_2.jpg" alt="?" >}}
-
-{{< img src="CreatACon_3.jpg" alt="?" >}}
+{{< groupimg width="500" >}}

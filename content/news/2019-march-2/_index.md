@@ -9,6 +9,4 @@ Russ brought along his collections of PI's with a robot arm , Steve brought alon
 In the PI noon arena James PI Wars entry had several hours of testing. 
 Our doorman George did a great job welcoming people.
 
-{{< img src="george.jpg" alt="?" >}}
-
-{{< img src="pijamprep.jpg" alt="?" >}}
+{{< groupimg width="600" >}}
