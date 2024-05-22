@@ -27,7 +27,19 @@
 {{- $LQIP_img := .Resize "20x jpg" -}}
 {{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
 {{- $LQIP_css := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-repeat: no-repeat; width: fit-content; height: fit-content; " -}}
-<div class="bg-center img-container" style="{{ $LQIP_css | safeCSS }}">
+{{/*
+    If the Image has Exif data, and contains the ImageDescription tag,
+    use it as the image's alt attribute, and provide a caption 
+    under the image. Otherwise, set the alt attribute to the file
+    name
+*/}}
+{{- $alt_tag := printf "alt=%q" .Name -}}
+{{- $caption_tag := "" -}}
+{{- with .Exif -}}{{- if .Tags.ImageDescription -}}
+{{- $caption_tag = (printf "<figcaption>%s</figcaption>" .Tags.ImageDescription) | safeHTML -}}{{- $alt_tag = printf "alt=%q" .Tags.ImageDescription  -}}
+{{- end -}}{{- end -}}
+{{/* ---------------- */}}
+<figure class="bg-center img-container" style="{{ $LQIP_css | safeCSS }}">
     <picture>
         <source
             type="image/webp"
@@ -41,9 +53,11 @@
             style="max-width: {{ $width }}px"
             src="{{ $fallbackImg.RelPermalink }}"
             loading="lazy"
+            {{ $alt_tag | safeHTMLAttr }}
         />
     </picture>
-</div>
+    {{- $caption_tag -}}
+</figure>
 {{- end -}}
 {{- end -}}
 </div>
