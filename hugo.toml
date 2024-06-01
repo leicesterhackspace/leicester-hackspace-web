@@ -30,24 +30,19 @@ pageRef = '/news.html'
 weight = 40
 
 [[menus.main]]
-name = 'Pictures'
-url = "https://www.flickr.com/groups/leicesterhackspace/pool/"
-weight = 50
-
-[[menus.main]]
 name = 'Membership'
 pageRef = '/membership.html'
-weight = 60
+weight = 50
 
 [[menus.main]]
 name = 'Wiki'
 url = "http://wiki4.leicesterhackspace.org.uk"
-weight = 70
+weight = 60
 
 [[menus.main]]
 name = 'Diary'
 pageRef = '/diary.html'
-weight = 80
+weight = 70
 
 [privacy]
   [privacy.youtube]
