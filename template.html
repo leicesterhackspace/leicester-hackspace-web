@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Leicester Hackspace</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.navItems').toggle();
+            $(".navmob1").click(function () {
+                $('.navItems').toggle();
+            });
+        });
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/dcsns_light.css" media="all" />
+    <script type="text/javascript" src="js/jquery.social.stream.wall.1.6.js"></script>
+    <script type="text/javascript" src="js/jquery.social.stream.1.5.15.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function($){
+            $('#social-stream').dcSocialStream({
+                feeds: {
+                    flickr: {
+//                        id:'69180930@N08,21815064301, 2710297@N20, /leicesterhackspace, 30125007@N03,',
+                        id: '69180930@N08, 127008331@N08, 69180930@N08, 69180930@N08',
+//                        intro: 'Uploaded',
+                        out: 'intro,thumb',
+//                        out: 'intro,thumb,title,text,share',
+//                        lang: 'en-us',
+//                        icon: 'flickr.png'
+                    },
+//                    youtube: {
+//                        id: 'FilmTrailerZone/UUPPPrnT5080hPMxK1N4QSjA',
+//                        out: 'intro,title,user,share'
+//                    },
+//                    twitter: {
+//                        id: '/LeicesterHack',
+////                        thumb: true
+//                    }
+                },
+                twitterId: 'LeicesterHack',
+                days: 1000,
+                limit: 5,
+                max: 'days',
+                external: true,
+                speed: 600,
+                height: 550,
+                wall: false,
+                order: 'random',
+                filter: true,
+                controls: false,
+                rotate: {
+                    direction: 'down',
+                    delay: 8000
+                },
+//                cache: true,
+//                container: 'dcsns',
+//                cstream: 'stream',
+//                content: 'dcsns-content',
+//                iconPath: 'images/dcsns-dark/',
+//                imagePath: 'images/dcsns-dark/',
+                debug: true
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=875457225905950";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="ui page grid">
+    <div class="computer tablet only row">
+        <div style="background-image: -webkit-linear-gradient(90deg,#c00 0,#d00 100%); padding-left:0%;padding-right:0%;" class="ui fixed menu navbar page grid inverted">
+            <div>
+                <img src="imgs/logo.png" style="height:41px;width:41px; margin-top:12px; margin-right: -50px;"/>
+            </div>
+            <div>
+                <nav id="main-menu" style="padding-right:0%; margin-top: 0px" >
+                    <ul class="nav-bar" >
+                        <li class="">
+                            <a href="index.html" >Home</a>
+                        </li>
+                        <li class="">
+                            <a href="about.html" >About</a>
+                        </li>
+                        <li class="">
+                            <a href="contacts.html" >Contacts</a>
+                        </li>
+                        <li class="">
+                            <a href="news.html" >News</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.flickr.com/groups/leicesterhackspace/pool/" >Pictures</a>
+                        </li>
+                        <li class="">
+                            <a href="membership.html" >Membership</a>
+                        </li>
+                        <li class="">
+                            <a href="https://groups.google.com/forum/#!forum/leicester-hackspace">GoogleGroup</a>
+                        </li>
+                        <li class="">
+                            <a href="http://leicesterhackspace.org.uk/wiki/" >Wiki</a>
+                        </li>
+                        <li class="">
+                            <a href="diary.html" >Diary</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <div class="ui mobile only row">
+            <div style="background-image: -webkit-linear-gradient(90deg,#c00 0,#d00 100%);" class="ui fixed navbar menu">
+                <img src="imgs/logo.png" style="height:41px;width:41px"/><a href="" style="color:white;" class="brand item">Home</a>
+                <div style="color: white" class="navItems">
+                    <br>
+                    <a href="index.html" style="color:white;" class="brand item">Home</a>
+                    <div class="ui simple dropdown brand item" style="color:white">About<i class="dropdown icon"></i>
+                        <div class="menu"><a href="about.html" style="color:white;" class="brand item">About</a>
+                            <a href="contacts.html" style="color:white;" class="brand item">Contact</a>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown brand item"  style="color:white">News<i class="dropdown icon"></i>
+                        <div class="menu"><a href="news.html" style="color:white;" class="brand item">News</a>
+                            <a href="https://www.flickr.com/groups/leicesterhackspace/pool/" style="color:white;" class="brand item">Pictures</a>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown brand item" style="color:white">Membership<i class="dropdown icon"></i>
+                        <div class="menu"><a href="membership.html" style="color:white;" class="brand item">Membership</a>
+                            <a href="https://groups.google.com/forum/#!forum/leicester-hackspace" style="color:white;" class="brand item">GoogleGroup</a>
+                            <a href="http://leicesterhackspace.org.uk/forum/" style="color:white;" class="brand item">Forum</a>
+                            <a href="http://leicesterhackspace.org.uk/wiki/" style="color:white;" class="brand item">Wiki</a>
+                        </div>
+                    </div>
+                    <a href="diary.html" style="color:white;" class="brand item">Diary</a>
+                    <br>
+                </div>
+                <div class="right menu navmob1 item" style="color:white;" class="icon sidebar" ><i style="color:white;" class="reorder icon sidebar icon"></i>
+                </div>
+            </div>
+        </div>
+    <div class="sixteen wide tablet twelve wide computer column mainColumn">
+        <div class="sixteen wide column">
+            <br>
+            <h1 class="heading">PUT PAGE TITLE HERE</h1>
+
+        </div>
+        <div class="row">
+            <div class="sixteen wide column">
+                <br>
+              <p> PUT PAGE CONTENT HERE</p>
+            </div>
+        </div>
+    </div>
+    <div class="fourteen wide tablet four wide computer column mainColumn">
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+            <form action="//leicesterhackspace.us9.list-manage.com/subscribe/post?u=a458f9916f6690c55dad8677b&amp;id=c4ad174cfb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <br><br>
+                    <h4 class="heading">Subscribe to our newsletter</h4>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                        </label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
+                    <p>Powered by <a href="http://eepurl.com/bMmhLn" title="MailChimp - email marketing made easy and fun">MailChimp</a></p>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a458f9916f6690c55dad8677b_c4ad174cfb" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[9]='MMERGE9';ftypes[9]='number';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+
+        <a href="membership.html"><img src="imgs/member.png" alt="img" style="width: 100%; float: auto; margin: 0px 5px 5px 0px;"></a>
+        <br>
+        <a class="twitter-timeline" href="https://twitter.com/LeicesterHack" data-widget-id="686275173360791552">Tweets by @LeicesterHack</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <div class="fb-page" data-href="https://www.facebook.com/LeicesterHackspace/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/LeicesterHackspace/"><a href="https://www.facebook.com/LeicesterHackspace/">Leicester Hackspace</a></blockquote></div></div>
+        <br><br>
+        <div id="social-stream"></div>
+
+    </div>
+</div>
+
+<div class=" footer" align="center"><br>
+    <div class="footerContent"><br>Leicester Hackspace Ltd is a non-profit company limited by guarantee (No. 08833126).</div>
+</div>
+
+<script>
+    $('iframe').iFrameResize({
+        autoResize: true,
+        heightCalculationMethod: 'bodyScroll'
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Leicester Hackspace</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.navItems').toggle();
+            $(".navmob1").click(function () {
+                $('.navItems').toggle();
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/dcsns_light.css" media="all" />
+    <script type="text/javascript" src="js/jquery.social.stream.wall.1.6.js"></script>
+    <script type="text/javascript" src="js/jquery.social.stream.1.5.15.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function($){
+            $('#social-stream').dcSocialStream({
+                feeds: {
+                    flickr: {
+//                        id:'69180930@N08,21815064301, 2710297@N20, /leicesterhackspace, 30125007@N03,',
+                        id: '69180930@N08, 127008331@N08, 69180930@N08, 69180930@N08',
+//                        intro: 'Uploaded',
+                        out: 'intro,thumb',
+//                        out: 'intro,thumb,title,text,share',
+//                        lang: 'en-us',
+//                        icon: 'flickr.png'
+                    },
+//                    youtube: {
+//                        id: 'FilmTrailerZone/UUPPPrnT5080hPMxK1N4QSjA',
+//                        out: 'intro,title,user,share'
+//                    },
+//                    twitter: {
+//                        id: '/LeicesterHack',
+////                        thumb: true
+//                    }
+                },
+                twitterId: 'LeicesterHack',
+                days: 1000,
+                limit: 5,
+                max: 'days',
+                external: true,
+                speed: 600,
+                height: 550,
+                wall: false,
+                order: 'random',
+                filter: true,
+                controls: false,
+                rotate: {
+                    direction: 'down',
+                    delay: 8000
+                },
+//                cache: true,
+//                container: 'dcsns',
+//                cstream: 'stream',
+//                content: 'dcsns-content',
+//                iconPath: 'images/dcsns-dark/',
+//                imagePath: 'images/dcsns-dark/',
+                debug: true
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=875457225905950";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="ui page grid">
+    <div class="computer tablet only row">
+        <div style="background-image: -webkit-linear-gradient(90deg,#c00 0,#d00 100%); padding-left:0%;padding-right:0%;" class="ui fixed menu navbar page grid inverted">
+            <div>
+                <img src="imgs/logo.png" style="height:41px;width:41px; margin-top:12px; margin-right: -50px;"/>
+            </div>
+            <div>
+                <nav id="main-menu" style="padding-right:0%; margin-top: 0px" >
+                    <ul class="nav-bar" >
+                        <li class="">
+                            <a href="index.html" >Home</a>
+                        </li>
+                        <li class="">
+                            <a href="about.html" >About</a>
+                        </li>
+                        <li class="">
+                            <a href="contacts.html" >Contacts</a>
+                        </li>
+                        <li class="">
+                            <a href="news.html" >News</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.flickr.com/groups/leicesterhackspace/pool/" >Pictures</a>
+                        </li>
+                        <li class="">
+                            <a href="membership.html" >Membership</a>
+                        </li>
+                        <li class="">
+                            <a href="https://groups.google.com/forum/#!forum/leicester-hackspace">GoogleGroup</a>
+                        </li>
+                        <li class="">
+                            <a href="http://wiki4.leicesterhackspace.org.uk" >Wiki</a>
+                        </li>
+                        <li class="">
+                            <a href="diary.html" >Diary</a>
+                        </li>
+                        
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <div class="ui mobile only row">
+            <div style="background-image: -webkit-linear-gradient(90deg,#c00 0,#d00 100%);" class="ui fixed navbar menu">
+                <img src="imgs/logo.png" style="height:41px;width:41px"/><a href="" style="color:white;" class="brand item">Home</a>
+                <div style="color: white" class="navItems">
+                    <br>
+                    <a href="index.html" style="color:white;" class="brand item">Home</a>
+                    <div class="ui simple dropdown brand item" style="color:white">About<i class="dropdown icon"></i>
+                        <div class="menu"><a href="about.html" style="color:white;" class="brand item">About</a>
+                            <a href="contacts.html" style="color:white;" class="brand item">Contact</a>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown brand item"  style="color:white">News<i class="dropdown icon"></i>
+                        <div class="menu"><a href="news.html" style="color:white;" class="brand item">News</a>
+                            <a href="https://www.flickr.com/groups/leicesterhackspace/pool/" style="color:white;" class="brand item">Pictures</a>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown brand item" style="color:white">Membership<i class="dropdown icon"></i>
+                        <div class="menu"><a href="membership.html" style="color:white;" class="brand item">Membership</a>
+                            <a href="https://groups.google.com/forum/#!forum/leicester-hackspace" style="color:white;" class="brand item">GoogleGroup</a>
+                            <a href="http://leicesterhackspace.org.uk/forum/" style="color:white;" class="brand item">Forum</a>
+                            <a href="http://wiki4.leicesterhackspace.org.uk" style="color:white;" class="brand item">Wiki</a>
+                            <a href="diary.html" style="color:white;" class="brand item">Diary</a>
+                            
+                        </div>
+                    </div>
+                    
+                    <br>
+                </div>
+                <div class="right menu navmob1 item" style="color:white;" class="icon sidebar" ><i style="color:white;" class="reorder icon sidebar icon"></i>
+                </div>
+            </div>
+        </div>
+    <div class="sixteen wide tablet twelve wide computer column mainColumn">
+        <div class="sixteen wide column">
+            <br>
+            <h1 class="heading">News</h1>
+
+        </div>
+        <div class="row">
+            <div class="sixteen wide column">
+				<br>
+				<h2>December 2023 </h2>
+				We held a Sunday crafting event just before Christmas. The Laser Cutter was put to use making some baubles and lanterns out of plywood. Cardboard was not quite as successful, we need to work on the settings.
+				The laser cutter still needs some fine tuning for large cuts, but for small pieces it is fantatsic. 
+				Keep your eye on Slack (for members) or Facebook for detailson training courses.
+				<br><p><img src="imgs/lantern.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<br><p><img src="imgs/bauble.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<br><p><img src="imgs/bauble1a.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<h2> November 2023 </h2>
+				Some pictures from our experience Raspberry PI 5 event. It attracted quite a bit of interest, from running Scratch to FFT analysis and the twin camera mode. Had a few problems with the latter but the issue has been sorted. Hoepfully one of the PI's will now be used in PI wars.
+				<br><p><img src="imgs/js.jpeg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<br><p><img src="imgs/scratch1.jpeg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<h2> October 2023</h2>
+				Getting ready for our Experience PI 5 event on November 18th
+				<br><p><img src="imgs/tabbeyPI5.jpeg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <br>
+				<h2>August 2023 </h2>
+				Did you see us at Punk Festival Weekend in Jubilee Square?
+				This was our first outing since COVID lockdown. We had a great time demonstrating our 3D printers and textile area. 
+				<br><p><img src="imgs/punk1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<br>
+				<h2>July 2023 </h2>
+				Halfway through the year already and we are about to roll out training on our laser cutter to the first group of members. It still needs some work to improve the accuracy but it is great for small pieces.
+				<br><br>
+				We have started to run our Monday Mechatronics from 1730 to enable junior members to come along. Hopefully they will be entering PI WARS 2024.
+				<br><br>
+				Thursday evenings are proving popular for 3D printing and our Stitch and Bitch evenings. More informatio can be found on our facebook page.
+				<br><br>
+				Talking of 3D printing, some of our members have printed a quarter size R2D2 , watch this page and we will post a picture when it is complete. Another member is making a full size K9 from Doctor Who.
+				
+				<h2>January 2023</h2>
+				We have recently made some changes to the layout of the Hackspace, opening up the entrance and moving some equipment around.
+				<br><p><img src="imgs/scaledENtrance.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<br><p><img src="imgs/scaledKitchen.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<br>The Vinyl cutter is available for use,as is a small CNC router and engraver. We are still working on the larger CNC machines and Laser Cutter.<br>
+				<p> We have a large surplues of discrete components , mainly resistors but some LEDS and IC's. </p> <br><p>If any STEM clubs, Scout groups are interested in having some, contact the Directors or come down on a Tuesday Evening for a tour.</p>
+				<br><p>We are always on the lookout for new members, checkout the membership page for details.</p>
+				<h2>November 2021</h2>
+					We are getting very close to having a working Laser Cutter available to all members. The team repairing it have been using it to cut some material. In addition, we will have two CNC machines and a Vinyl Cutter available for use.
+				<br>
+				<h2> August 2021</h2>
+				Slightly behind schedule but the roof tiles have been repaired, desks set up and started to clean the kitchen. Thursday night 3D printing sessions are proving popular with members being inducted or using the machines. On Tuesday nights one of our Directors is available to show prospective members around.
+				<br>
+				<h2>July 2021 </h2>
+				<p> We are getting ready to re-open for face to face meetings. Members have been busy during lockdown repairing machines and getting rid of excess equipment. We should have two CNC machines , a Vinyl Cutter and our laser cutter ready for members to use. One of the jobs was to re-fit some of the roof insulation tiles.</p>
+				<br><p><img src="images/billscaffold.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<br><p><img src="images/excessequipment.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<br><p><img src="images/vinylcnc.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <h2>Internet of Things</h2>
+                <p>
+                   We recently acquired some photon devices from Paricle.io. One of our members has installed a unit in the Hackspace connected to
+                    two PIRs and Temperature sensor. This device connects to the Hackspace wifi and enables the device to be re-programmed remotely and 
+                    the data streamed to a site and graphed. During the lockdown this has enabled some degree of remote monitoring. If you are interested in this type of project,
+                    then come on down when we re-open to new members. Current data is shown below.</p>
+                    <div class="is-embed">
+			               <iframe width="800" height="600" src="https://iot.app.initialstate.com/embed/#/tiles/bkt_ak9zll1jt01tsbt"></iframe>
+						
+
+		               </div>
+				<div class="is-embed">
+			               <iframe width="800" height="600" <iframe src="https://iot.app.initialstate.com/embed/#/tiles/bkt_iho81k4iect9l"></iframe>
+			</div>
+				<h2>Virtual Hackspace Tour</h2>
+				<p>
+					During the COVID-19 lockdown the Hackspace has been closed to new members and has only been open to existing
+					members with a valid reason for access. One of our relatively new members, Max Ruffels, has created a virtual tour which is on our YouTube 
+					channel and has a link from our members page. If you want to see our resources, check it out and come down for a tour when we
+					re-open.
+				</p>
+				<h2>Virtual PI Wars 2020 </h2>
+				<p> One of our members, James, was due to compete for the second year in PI WARS. Hoping to improve on last years performance.  Unfortunately PI Wars was cancelled in March due to the COVID-19 pandemic. It was replaced by a virtual PI Wars competion held on YouTube.     Competitors had to submit a 5 minute video of their robot. Viewers then had a chance to vote and pick the best robot. All robots can be seen here</p> <p> <a href="https://piwars.org/2020-competition/virtual/catchup/" >Virtual PI wars </a> </p> <p> You can see James entry below</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/n0LahJH7ufs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h2> Hackspace is "Virtually" Operating</h2>
+				<p> We have left all of our regular events on the diary. At the moment
+					we are holding zoom sessions on a Monday Evening for Mechatronics and Wednesday evening for a regular Blender tutorial. If you are interested, please check out our Facebook page for details on how to join. Monday evenings are great if you have a problem with a Raspberry PI, Microbit, Arduino, Crumble or anything electronic.</p>
+				<h2>CoronaVirus Update  March 17th</h2>
+				<p> In line with the governments request to limit social interaction the Hackspace is stopping its Tuesday Evening open
+					nights for new members. The website will be updated when the situation changes or if you use facebook check out our page
+					for news. </p>
+				<h2>Computing Area Now available to members</h2>
+				<p>Thanks to sterling work by several of our members, we now have a computing area comprising 6 dual booting PC's running Windows 10 or Linux Mint. Two of the PC's have dual monitors and all are connected to the internet.</p>
+				<p>All PC's have design software, 3D printing slicers, software development packages.</p> 
+					
+				<p>They were recently successfully used by our second code club session.</p>
+				<p><img src="imgs/computerArea.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<h2> June 2019</h2>
+				<p> We started June with two days at the Riverside Festival with for the first time our own
+				stand. Saturday was nice and sunny, Sunday on the damp side.</p>
+				<p><img src="imgs/sunnyRiverside.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<p><img src="imgs/wetRiverside.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<h2> May 2019</h2>
+				<p> One of our busiest months with two exhibitions in Birmingham </p>
+				<p> 3D Printer Meetup Birmingham</p>
+				<p> Last year Keith attended the first 3D Printer meetup in Birmingham. This year he went back with
+					Hackspace members Bill and Jan with our own stand.</p>
+				<p><img src="imgs/3DMeetUp.JPG" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<p></p>
+				<p><img src="imgs/lastStand.JPG" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+				<p> I think something went wrong with the timing of the last Sierpinski Pyramid.  A case of Last Man Standing?</p>
+				
+				<p> On Saturday May 11th Tony represented Leicester Hackspace on the National Hackspace Stand 
+					at Makers Central NEC.</p>
+				<p> His milk bottle recycling and spark generator were well received.</p>
+				<p><img src="imgs/makersCentral.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <h2>PI-Wars 2019 </h2>
+                <p> One of our younger members James competed in PI-Wars 2019 at Cambridge at the weekend. He was placed 10 out of 15 in his class which is a
+                  fantastic result as he never competed in any of the autonomous challenges. He managed to get through to the quarter-finals of PI-Noon where you have to burst
+                  balloons on your competitors robot.</p>
+                  <p><img src="imgs/pinoon.jpeg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                  <p> PI-Noon<p/>
+                  <p><img src="imgs/canyon.jpeg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                  <p>Canyon of Mars</p>
+                  <p><img src="imgs/spaceinvaders.jpeg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                  <p>Space Invaders </p>
+                <h2> Creat-a-con March 9th 2019</h2>
+                <p> The Hackspace attended creat-a-con at the LBC on Saturday March 9th. It was another great success. Once the doors opened we had a steady flow of visitors.
+                  So many in fact we did not have time to take any pictures, we are waiting for the offical ones. The 3D printers and sandbox were a great success, with lots of visitors
+                  asking about the PI's and high energy display.</p>
+                  <p><img src="imgs/sand.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                  <p><img src="imgs/steve.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                  <p><img src="imgs/tonycc.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                  <p><img src="imgs/print.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <h2>Raspberry PI Birthday Jam Party a success</h2>
+                <p> We had 21 tickets taken up out of 40 for the event with 17 attendees plus members. There was a workshop area with 8 PI's where attendess could use Scratch or Python to control
+                  some traffic lih=ght LEDS provided by the foundation. Russ brought along his collections of PI's with a robot arm , Steve brought along some of his robots.
+                  In the PI noon arena James PI Wars entry had several hours of testing. Our doorman George did a great job welcoming people.</p>
+                    <p><img src="imgs/george.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                      <p><img src="imgs/pijamprep.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <h2>Raspberry PI BirthDay Jam</h2>
+                <p> The Hackspace is hosting a Raspberry PI Birthday Jam on Saturday March 2nd. Tickets for non-members are available free of charge
+                  from www.eventbrite.com , search for our event on the day and book your ticket. All welcome, if you are under the age of 16 you must come with
+                  a responsible adult. Novices and experts welcome. We will have workshops, demonstrations and if you have got a PI and want some help, come along.</p>
+                <h2>PI-Wars</h2>
+                <p>One of our members has been accepted for PI-Wars on March 31st, watch this space to see how we get on </p>
+
+                <h2>Laser Cutter Status </h2>
+                <p>There has been some excellent work carried out by several members, resulting in a test firing of the laser.
+                  Hopefully it won't be too long before it is available to members to use, after a suitable induction of course. </p>
+                    <p><img src="imgs/laser1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <h2>Riverside June 2018</h2>
+                <p> Divya organised this years attendance at the Riverside festival. We always attract quite a bit of interest and
+                  at our first Openhack night on the Tuesday after the event had a dozen or so members of the public come to have a look at us.
+                  Three of which signed up as members.</p>
+                  <p><img src="imgs/riversideJune2018_1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                  <p><img src="imgs/riversideJune2018_2.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+
+                <h2>Robotics and Mechatronic Jam April 16th </h2>
+                <p> The photograph below shows Bill's rapidly increasing collection of robots for his CodeClub.</p>
+                <p> The processors are Raspberry PI's, Micro-Bit's and Crumble's. Chassis's are made out of cardboard or 3D
+                  printed, with a 3D printed holder for the castor wheel.</p>
+                  <p> All connected using crocodile clips.</p>
+                  <p> I wonder what the next one will be?</p>
+                  <p><img src="imgs/billRobot.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <h2> Inaugral Radio Control Jam </h2>
+                <p> Thursday April 5th saw the first of our Radio Control Jams, happening on the first and third Thursday of the month.</p>
+                <p> Star model of the evening was Dave's Radio Controlled Buggy.</p>
+                <p>"I took a battered and unwanted 3 wheeled buggy and stripped it down of all unnessesary parts,
+                   designed and 3d printed adapters for the wheel hubs to take a standard toothed belt,
+                   added a second stage of gearing and used a couple of old quadcopter motors i had kicking around
+                    (with ESCs and reciever), the result is somewhat limited having very little torque at low speeds
+                     and has no reverse, but its great fun to drive!"</p>
+                <p><img src="imgs/dave1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p><img src="imgs/dave2.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p> Why not come along to the next jam with your own project. <p>
+                <h2> Creat-A-Con March 10th</h2>
+                <p> Saturday March 10th saw the Hackspace attend Create-a-con again, this time held for the first time at the LCB
+                  depot.</p>
+                  <p>All images are courtesy of Chris Slowe, Chris Leach and SideFest. More can be found on the facebook site at
+                  https://www.facebook.com/pg/creatacon/photos/?tab=album&album_id=1471096849684645 .</p>
+                  <p>Aaron and Divya brought the sand box which always attracts a large number of visitors.
+                </p>
+                <p><img src="imgs/sand1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p><img src="imgs/sand2.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p><img src="imgs/sand3.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p> Keith, Aaron and Matt demonstrated several of our 3D printers.</p>
+                <p><img src="imgs/3d1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p><img src="imgs/3d2.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p> Tony and Bruce demonstrated their spark machines and BBC computer </p>
+                <p><img src="imgs/tony1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p><img src="imgs/tony2.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p><img src="imgs/tony3.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p> Steve and Russ brought along their Raspberry PI robots and home automation demonstrations</p>
+                <p><img src="imgs/robot1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p><img src="imgs/robot2.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p><img src="imgs/robot3.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p> Last but not least Marie and John were there from Leicester Fixers.</p>
+                <p><img src="imgs/fix1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                <p> We always have a good attendance at Creat-A-Con from HAckspace members, easily filling a room
+                  to ourselves. Hopefully we will also attract some new members. </p>
+                <h2>Extreme Electronics Talk </h2>
+                <p> Saturday March 3rd saw our first event at the new hackspace when Derek
+                   from Extreme Electronics gave us some great demos of his Tesla coils and Large Van der Graff generator.  </p>
+                   <p><img src="imgs/Tesla1.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                   <p><img src="imgs/Tesla2.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /></p>
+                   <p> Check out the link to our Facebook page of a great video of the
+                     <a href="https://www.facebook.com/groups/1011373778895474/permalink/1871834676182709/" >Tesla Coils making music!</a>  </p>
+                <h2> Summary of 2017</h2>
+                <p> 2017 saw our membership expand at the De Montfort University Innovation Centre, so that
+                  in November we moved to our new location on the Faircharm Trading Estate.</p>
+                <p>There is an event now on every weekday evening,  nominally between 1830 and 2130.</p>
+                <p>Monday evenings alternate between Crypto Club, Arduino Jam, Robotics - Mechatronic, and Raspberry Pi Jam.</p>
+                <p>Tuesday evenings remains the Open Hack Night for new members</p>
+                <p>Wednesday evenings is a members only hack night.</p>
+                <p>Thursday evenings saw the introduction of a members only 3D printing club and a textiles evening.</p>
+                <p>Friday nights alternate between TableTop Gaming and Role Playing.</p>
+                <p>All details can be found on the Diary page.</p>
+                <p>Slack has been introduced for Members only Communication</p>
+                <p>Facebook and Meetup are used to attract new members</p>
+                <h2>  SideFest's Creat-A-Con </h2>
+                <p> <i>
+                            Saturday 30th July 2016 </i><br /><br /> </p>
+                <p> We had a great day exhibiting at Creat-A-Con hosted
+    at De Montfort University by their students. Our augmented reality
+    sandbox was clearly the most successful attraction of the day and thoroughly
+    enjoyed by many adults and kids alike. We also had other great stuff to show
+    off: Matt's 3D printer, a whole section dedicated to Steve's Raspberry Pi
+    robotics and scratch activities for kids, 3D projections by Isis and Artur. Tony's Wimshurst machine produced some great sparks and was a source of great fascination to visitors who had never had the chance to learn about static electricity at school. Thanks to those who attended and all those who did the hard work to make it a great success.</p>
+                <p><img src="imgs/CreatACon_0.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /> <img src="imgs/CreatACon_1.jpg" alt="img" style="width: 44%; margin: 0px 5px 5px 0px;" /> <img src="imgs/CreatACon_2.jpg" alt="img" style="width: 44%; margin: 0px 5px 5px 0px;" /> <img src="imgs/CreatACon_3.jpg" alt="img" style="width: 90%; margin: 0px 5px 5px 0px;" /> </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="fourteen wide tablet four wide computer column mainColumn">
+        <br><br>
+        <a href="membership.html"><img src="imgs/member.png" alt="img" style="width: 100%; float: auto; margin: 0px 5px 5px 0px;"></a>
+        <br>
+        <a class="twitter-timeline" href="https://twitter.com/LeicesterHack" data-widget-id="686275173360791552">Tweets by @LeicesterHack</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <div class="fb-page" data-href="https://www.facebook.com/LeicesterHackspace/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/LeicesterHackspace/"><a href="https://www.facebook.com/LeicesterHackspace/">Leicester Hackspace</a></blockquote></div></div>
+        <br><br>
+
+    </div>
+</div>
+
+<div class=" footer" align="center"><br>
+    <div class="footerContent"><br>Leicester Hackspace Ltd is a non-profit company limited by guarantee (No. 08833126).</div>
+</div>
+
+<script>
+    $('iframe').iFrameResize({
+        autoResize: true,
+        heightCalculationMethod: 'bodyScroll'
+    });
+</script>
+</body>
+
+</html>
