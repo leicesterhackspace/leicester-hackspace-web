@@ -2,6 +2,7 @@
 title = '2019 May'
 date = 2019-05-11T00:00:00Z
 type = "posts"
+# cspell:ignore Sierpinski
 +++
 One of our busiest months with two exhibitions in Birmingham
 

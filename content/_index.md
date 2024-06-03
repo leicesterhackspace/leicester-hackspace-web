@@ -4,6 +4,7 @@ date = 2023-11-09T13:49:01Z
 +++
 Leicester Hackspace is a venue for makers of digital, electronic, mechanical and creative projects
 
+
 {{< img src="img/3dprinters.jpg" title="3D Printers" >}}
 
 Like other Hackspaces across the country, we are working to build a community of practical and creative people and provide them with a place to pursue their projects, share techniques and concepts and learn new skills.

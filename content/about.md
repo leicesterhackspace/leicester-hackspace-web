@@ -21,7 +21,7 @@ If a member wants to be able to have a storage box they must maintain their mont
 
 Once you become a member the space is as much yours as anyone else.
 
-Provided members keep paying their monthly dues the space is available 24/7/365. Initially new members are advised to come in the evenings when others are there until they really know their way around the space , how to safely open up and lockup the space after having cleaned up after themselves.
+Provided members keep paying their monthly dues the space is available 24/7/365. Initially new members are advised to come in the evenings when others are there until they really know their way around the space, how to safely open up and lock up the space after having cleaned up after themselves.
 
 Members use the equipment strictly at their own risk and are self certifying as to their ability to use it safely. If help is required a member who has experience in using a piece of equipment who will show you how, but that person is NOT a formal technician or a teacher.
 
@@ -40,7 +40,7 @@ Members can volunteer to help with other tasks such as:
 - Manning stands at exhibitions
 - Formal and informal talks
 
-Since its opening in 2014 Leicester Hackspace has had 3 locations. Each move has given us more space to accomodate an increase in Membership and space for more equipment. 
+Since its opening in 2014, Leicester Hackspace has had 3 locations. Each move has given us more space to accommodate an increase in Membership and space for more equipment. 
 
 {{< img src="img/hackspace-3.0.jpg" title="Version 3.0 of the Hackspace" >}}
 

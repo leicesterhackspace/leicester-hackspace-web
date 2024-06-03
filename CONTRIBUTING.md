@@ -4,7 +4,7 @@ anything, please read the guidelines below to ensure you understand how to use t
 meet this projects standards. 
 
 # Hugo
-This site uses [Hugo Static Site generation](https://gohugo.io/) to render mark down into the static HTML pages taht make up the site.
+This site uses [Hugo Static Site generation](https://gohugo.io/) to render mark down into the static HTML pages that make up the site.
 
 Please find documentation for using hugo here: [https://gohugo.io/documentation/](https://gohugo.io/documentation/)
 
@@ -61,7 +61,7 @@ The `baseof.html` layout determines the main html layout. `Home.html`, `List.htm
 `body` layout of the homepage, list pages, and all other pages, respectively.
 
 These layouts use partials from `/themes/hackspace-theme/layouts/partials`. These partials are essentially reusable
-snippets of html. Though they are mainly used for breaking down the content of the pages into managable snippets.
+snippets of html. Though they are mainly used for breaking down the content of the pages into manageable snippets.
 
 ### Shortcodes
 Some [shortcodes](https://gohugo.io/content-management/shortcodes/) have been created in 
@@ -146,7 +146,7 @@ When modifying an existing post, please use the following steps:
 This project has a couple of dependencies that must be setup before it can be used:
 * [Git (duh)](https://git-scm.com/)
 * [Hugo](https://gohugo.io/installation/)
-* [datsass](https://sass-lang.com/install/)
+* [dartsass](https://sass-lang.com/install/)
 
 ## Dev Environment
 To run the site locally use:

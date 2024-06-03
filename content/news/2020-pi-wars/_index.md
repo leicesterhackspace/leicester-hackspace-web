@@ -1,5 +1,5 @@
 +++
-title = 'Virutal Pi Wars 2020'
+title = 'Virtual Pi Wars 2020'
 date = 2020-05-01T00:00:00Z
 type = "posts"
 +++

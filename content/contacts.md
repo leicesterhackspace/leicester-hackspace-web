@@ -1,6 +1,7 @@
 +++
 title = 'Contacts'
 date = 2023-11-16T20:35:48Z
+# cspell:ignore leicesterhackspace
 +++
 Leicester Hackspace Ltd  
 Unit 40, First Floor  

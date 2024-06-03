@@ -1,0 +1,34 @@
+language: "en-gb"
+useGitignore: true
+
+import:
+  - "@cspell/dict-markdown"
+  - "@cspell/dict-css"
+  - "@cspell/dict-en-gb"
+dictionaryDefinitions:
+  - name: custom-dictionary
+    path: './.cspell/custom-dictionary.txt'
+dictionaries:
+  - en-gb
+  - css
+  - markdown
+  - custom-dictionary
+
+ignorePaths:
+  - node_modules
+  - cspell.config.yaml
+  - package.json
+  - package-lock.json
+
+patterns:
+  - name: short-code
+    pattern: "/{{<.*?>}}/"
+  - name: inline-code
+    pattern: "`.*?`"
+languageSettings:
+  - languageId: markdown
+    ignoreRegExpList:
+      - short-code
+      - Urls
+      - Email
+      - inline-code

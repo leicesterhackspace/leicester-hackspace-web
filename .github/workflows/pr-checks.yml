@@ -1,0 +1,41 @@
+name: Check PR
+
+on:
+  pull_request:
+    branches:
+      - develop
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    name: Check Builds
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: 'true'
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.119.0'
+          extended: true
+      - name: Build
+        run: hugo
+  spellcheck:
+    name: Check Spelling
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Install dictionaries
+        run: npm install
+      - uses: streetsidesoftware/cspell-action@v6
+        with:
+          files: '**/*{.md,.css,.html}'
+          config: './cspell.config.yaml'

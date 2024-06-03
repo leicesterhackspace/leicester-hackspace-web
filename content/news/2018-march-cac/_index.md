@@ -2,8 +2,9 @@
 title = 'Creat-A-Con March 10th'
 date = 2018-03-10T00:00:00Z
 type = "posts"
+# cspell:ignore Slowe
 +++
-Saturday March 10th saw the Hackspace attend Create-a-con again, this time held for the first time at the LCB depot.
+Saturday, March 10th saw the Hackspace attend Create-a-con again, this time held for the first time at the LCB depot.
 
 All images are courtesy of Chris Slowe, Chris Leach and SideFest. 
 More can be found on the facebook site at [https://www.facebook.com/pg/creatacon/photos/?tab=album&album_id=1471096849684645](https://www.facebook.com/pg/creatacon/photos/?tab=album&album_id=1471096849684645).

@@ -2,6 +2,7 @@
 title = "SideFest's Creat-A-Con"
 date = 2016-07-30T00:00:00Z
 type = "posts"
+# cspell:ignore Artur Wimshurst
 +++
 We had a great day exhibiting at Creat-A-Con hosted at De Montfort University by their students. 
 Our augmented reality sandbox was clearly the most successful attraction of the day and thoroughly enjoyed by many adults and kids alike. 
