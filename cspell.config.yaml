@@ -22,7 +22,7 @@ ignorePaths:
 
 patterns:
   - name: short-code
-    pattern: "/{{<.*?>}}/"
+    pattern: "/{{<[\\s\\S]*?>}}/"
   - name: inline-code
     pattern: "`.*?`"
 languageSettings:
