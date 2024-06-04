@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, height=device-height">
 {{- with resources.Get .Site.Params.siteFavIcon }}
-    <link rel="icon" href="{{.RelPermalink}}"/>
+    <link rel="icon" href="{{ .RelPermalink }}"/>
 {{- end }}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}

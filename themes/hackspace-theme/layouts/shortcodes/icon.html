@@ -2,5 +2,5 @@
 
 <!-- Simple short code that embeds an SVG from the icon subdirectory -->
 {{ $icon := .Get 0 }}
-{{ $path := printf "icons/%s.svg" $icon}}
+{{ $path := printf "icons/%s.svg" $icon }}
 {{ $path | readFile | safeHTML }}

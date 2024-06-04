@@ -39,3 +39,13 @@ jobs:
         with:
           files: '**/*{.md,.css,.html}'
           config: './cspell.config.yaml'
+  markdown:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            **/*.md
+            !node_modules

@@ -11,47 +11,47 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav>
-    <div id="nav-mobile">
-      {{- with resources.Get site.Params.siteImage -}}
-        {{ (. | minify).Content | safeHTML }}
-      {{- end -}}
+    <nav>
+        <div id="nav-mobile">
+            {{- with resources.Get site.Params.siteImage -}}
+                {{ (. | minify).Content | safeHTML }}
+            {{- end -}}
 
-      {{ "static/icons/fas-bars.svg" | readFile | safeHTML }}
-    </div>
-    <div id="nav-wrap">
-      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </div>
-  </nav>
+            {{ "static/icons/fas-bars.svg" | readFile | safeHTML }}
+        </div>
+        <div id="nav-wrap">
+            {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </div>
+    </nav>
 {{- end }}
 
 {{- define "partials/inline/menu/walk.html" }}
-  {{- $page := .page }}
-  {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL }}
-    {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
-    {{- end }}
-    <a
-      {{- range $k, $v := $attrs }}
-        {{- with $v }}
-          {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+    {{- $page := .page }}
+    {{- range .menuEntries }}
+        {{- $attrs := dict "href" .URL }}
+        {{- if $page.IsMenuCurrent .Menu . }}
+            {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+        {{- else if $page.HasMenuCurrent .Menu . }}
+            {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
         {{- end }}
-      {{- end -}}
-    >
-    {{- with .Params.icon}}
-      {{- with resources.Get .}}
-        {{(. | minify).Content | safeHTML}}
-      {{- end }}
-    {{- end}}
-    {{ or (T .Identifier) .Name | safeHTML }}
-    </a>
-    {{- with .Children }}
-      <div>
-        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-      </div>
+        <a
+                {{- range $k, $v := $attrs }}
+                    {{- with $v }}
+                        {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                    {{- end }}
+                {{- end -}}
+        >
+            {{- with .Params.icon }}
+                {{- with resources.Get . }}
+                    {{ (. | minify).Content | safeHTML }}
+                {{- end }}
+            {{- end }}
+            {{ or (T .Identifier) .Name | safeHTML }}
+        </a>
+        {{- with .Children }}
+            <div>
+                {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+            </div>
+        {{- end }}
     {{- end }}
-  {{- end }}
 {{- end }}
