@@ -143,7 +143,7 @@ MD032: true
 MD033: false
 
 # MD034/no-bare-urls : Bare URL used : https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/md034.md
-MD034: true
+MD034: false
 
 # MD035/hr-style : Horizontal rule style : https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/md035.md
 MD035:
