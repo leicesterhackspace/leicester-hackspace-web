@@ -18,7 +18,7 @@ static html pages but are not automatically added to the navbar, you can find th
 
 ### List Pages
 List pages are pages that have lots of "articles" that are paginated. Currently, the site only has one list page: the
-News Page.
+News Page. More information can be found in [news](#news-posts) below.
 
 These work slightly differently from regular pages. To create one, create a folder with the intended html name in
 `content`, then create an `_index.md` file in that new directory. That `_index.md` file doesn't have to contain anything
@@ -41,11 +41,18 @@ pageRef = '/PAGE PATH.html' # The path to the page, starting in the content dire
 weight = 40                 # The weight used to order the nav bar, these should just go in ascending for ease
 ```
 
-For list pages, the `pageRef` is the name of the folder, with `.html` on the end still. For example, the new page's
+For list pages, the `pageRef` is the name of the folder, with `.html` on the end still. For example, the news page's
 `pageRef` is `/news.html`.
 
 ## Archetypes
 Archetypes are templates for new pages created through the command line. This site has a template for news posts.
+
+In order to use an Archetype, you would use a command similar to the below:
+```
+hugo new intended/path/of/content
+```
+
+Depending on the path, hugo will use the archetype that matches the path, or use the default if no matches are found.
 
 Archetypes can be found in `/archetypes`.
 
@@ -101,17 +108,14 @@ Some [Font Awesome](https://fontawesome.com/) Icons are available at `/themes/ha
 # Style guide
 TODO
 
-## html
-
+## HTML
 * 2 space tabs
 
-## css
-
+## CSS
 * 2 space tabs
 * Avoid bootstrap style single use classes
 
-## markdown
-
+## Markdown
 * Readability over conciseness
 
 ## Images
@@ -130,24 +134,22 @@ The `news` content page is a [list page](#list-pages).
 ## Creating
 To create a new news post, please use the following steps:
 
-1. Create a new folder in `/content/news`, the name should be in kebab case, lower case, and relevant.
-   For example: `big-important-event`
-2. In said folder, create a file called "_index.md", and write the post in there, be sure to follow good markdown
-  practices ([markdown style guide](#markdown))
-   * Ensure you add correct front matter to the post
+1. Run the command `hugo new news/YYYY-M-topic` which will generate the relevant folder and a _index.md file for you. It will use the predefined archetype found at `archetypes/news/_index.md`
+   * YYYY represents the relevant year. e.g. `2024`
+   * M represents a month in text form, it is the first three letters. e.g. `jan`
+   * If in doubt, have a look at the existing names that are found in the `content/news/` directory, and use them as a reference
+2. Update the date so that it is accurate to the relevant to the post. If possible, replace the time of the post with `00:00:00Z`, as it will initially use the time of creation
+3. Add content to the post, underneath the frontmatter (the `+++`). Make sure to follow good markdown practices ([markdown style guide](#markdown))
    * If the post includes any images, videos, or other extra content, store them in the post directory
-3. Commit the new post to a new branch
-4. Create a pull request for the new post
+4. Once happy with the content, remove the `draft = true` section from the frontmatter at the top of the document
+5. Create a new branch from develop (e.g. `git checkout -b add-news-post`)
+   * 'add-news-post' should be swapped with a description fitting of the news post being added
+6. Run `git add` on the files you have added (e.g. `git add content/news/*`) 
+7. Commit your changes to the new branch (e.g. `git commit -m "Add new news post"`)
+   * Update the message that is in quotes to a description fitting of the news post being added
+8. Push your local branch to the remote repository (e.g. `git push origin add-news-post`)
+9. Create a pull request for the new branch
    * Ensure the PR is reviewed by at least one other person, preferably 2, to ensure the post is up to standards.
-
-> Note: There is a shortcut to perform steps 1 and 2 by executing the following command:
->
-> ```markdown
-> hugo new news/POST-NAME
-> ```
->
-> Where `POST-NAME` is the name you wish to give the post.
-
 ## Modifying
 When modifying an existing post, please use the following steps:
 
