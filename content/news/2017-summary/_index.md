@@ -3,7 +3,9 @@ title = 'Summary of 2017'
 date = 2017-12-30T00:00:00Z
 type = "posts"
 +++
-2017 saw our membership expand at the De Montfort University Innovation Centre, so that in November we moved to our new location on the Faircharm Trading Estate.
+
+2017 saw our membership expand at the De Montfort University Innovation Centre, so that in November we moved to our new
+location on the Faircharm Trading Estate.
 
 There is an event now on every weekday evening, nominally between 1830 and 2130.
 

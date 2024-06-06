@@ -1,6 +1,6 @@
 {{- $src := .Get "src" -}}
 {{- if not $src -}}
-{{- errorf "No iframe src provided" -}}
+    {{- errorf "No iframe src provided" -}}
 {{- end -}}
 {{- $width := or (.Get "width") "600" -}}
 {{- $height := or (.Get "height") "450" -}}
