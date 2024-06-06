@@ -48,7 +48,8 @@ For list pages, the `pageRef` is the name of the folder, with `.html` on the end
 Archetypes are templates for new pages created through the command line. This site has a template for news posts.
 
 In order to use an Archetype, you would use a command similar to the below:
-```
+
+```bash
 hugo new intended/path/of/content
 ```
 
@@ -134,22 +135,27 @@ The `news` content page is a [list page](#list-pages).
 ## Creating
 To create a new news post, please use the following steps:
 
-1. Run the command `hugo new news/YYYY-M-topic` which will generate the relevant folder and a _index.md file for you. It will use the predefined archetype found at `archetypes/news/_index.md`
+1. Run the command `hugo new news/YYYY-M-topic` which will generate the relevant folder and a _index.md file for you. It
+   will use the predefined archetype found at `archetypes/news/_index.md`
    * YYYY represents the relevant year. e.g. `2024`
    * M represents a month in text form, it is the first three letters. e.g. `jan`
-   * If in doubt, have a look at the existing names that are found in the `content/news/` directory, and use them as a reference
-2. Update the date so that it is accurate to the relevant to the post. If possible, replace the time of the post with `00:00:00Z`, as it will initially use the time of creation
-3. Add content to the post, underneath the frontmatter (the `+++`). Make sure to follow good markdown practices ([markdown style guide](#markdown))
+   * If in doubt, have a look at the existing names that are found in the `content/news/` directory, and use them as a
+     reference
+2. Update the date so that it is accurate to the relevant to the post. If possible, replace the time of the post with
+   `00:00:00Z`, as it will initially use the time of creation
+3. Add content to the post, underneath the frontmatter (the `+++`). Make sure to follow good markdown practices
+   ([markdown style guide](#markdown))
    * If the post includes any images, videos, or other extra content, store them in the post directory
 4. Once happy with the content, remove the `draft = true` section from the frontmatter at the top of the document
 5. Create a new branch from develop (e.g. `git checkout -b add-news-post`)
    * 'add-news-post' should be swapped with a description fitting of the news post being added
-6. Run `git add` on the files you have added (e.g. `git add content/news/*`) 
+6. Run `git add` on the files you have added (e.g. `git add content/news/*`)
 7. Commit your changes to the new branch (e.g. `git commit -m "Add new news post"`)
    * Update the message that is in quotes to a description fitting of the news post being added
 8. Push your local branch to the remote repository (e.g. `git push origin add-news-post`)
 9. Create a pull request for the new branch
    * Ensure the PR is reviewed by at least one other person, preferably 2, to ensure the post is up to standards.
+
 ## Modifying
 When modifying an existing post, please use the following steps:
 
