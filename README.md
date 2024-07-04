@@ -8,19 +8,24 @@ We welcome contributions of any kind, please see our [CONTRIBUTING.md](/CONTRIBU
 and how to contribute.
 
 # Building
+
 ## Requirements
 This project requires [Hugo](https://gohugo.io/installation/) and [DartSass](https://dart.dev/get-dart).
 
 ## Dev Environment
 To run the site locally use:
+
 ```shell
 hugo server -D
 ```
+
 This will host a local webserver with the site's content.
 
 ## Release Build
 To generate the static site content, run:
+
 ```shell
 hugo
 ```
+
 This will output the static HTML into `/public`.
