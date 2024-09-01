@@ -1,3 +1,4 @@
+<!--A shortcode to add an iframe into the markdown content, with some utils for styling-->
 {{- $src := .Get "src" -}}
 {{- if not $src -}}
     {{- errorf "No iframe src provided" -}}
