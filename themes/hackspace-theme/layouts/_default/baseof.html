@@ -16,8 +16,9 @@
         {{ partial "footer.html" . }}
     </div>
 </footer>
-<script>
-    registerNav();
-</script>
+<dialog id="image-modal">
+    <button id="modal-exit">{{ "static/icons/fas-xmark.svg" | readFile | safeHTML }}</button>
+    <img src="" alt=""/>
+</dialog>
 </body>
 </html>

@@ -47,7 +47,7 @@
 <figure class="bg-center img-container" style="{{ cond ($imageHeight | not | not) (printf "height: %s;" $imageHeight) "" | safeCSS}}">
     <div class="fig-container">
         <div class="low-qual-image-wrapper" style="{{ $LQIP_css | safeCSS }}">
-        <picture>
+        <picture data-large="{{ .RelPermalink }}">
             <source
                 type="image/webp"
                 srcset="{{ (.Resize (printf "%sx%s" $width " webp")).RelPermalink }}"
