@@ -101,36 +101,9 @@ body {
       }
     }
 
-    .img-container.left-align {
-      float: left;
-    }
-
-    .img-container.right-align {
-      float: right;
-    }
-
-    .img-container.center-align {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     .img, .optimg {
       width: 100%;
       height: auto;
-    }
-
-    .img-group {
-      display: flex;
-      flex-wrap: wrap;
-
-      .img-container {
-        display: inline-block;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-      }
     }
 
     .iframe-loading {
@@ -153,6 +126,38 @@ body {
   a {
     color: #00e;
     text-decoration: none;
+  }
+
+  /* Utils */
+
+
+  .left-content {
+    @media (min-width: 576px) {
+      max-width: calc(100% - 5px);
+      margin: auto;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 45%;
+      float: left;
+    }
+  }
+
+  .right-content {
+    @media (min-width: 576px) {
+      margin: auto;
+      max-width: calc(100% - 5px);
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 45%;
+      float: right;
+    }
+  }
+
+  .center-content {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @import "./list.scss";
