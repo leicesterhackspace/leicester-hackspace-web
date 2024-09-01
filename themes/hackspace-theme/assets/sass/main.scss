@@ -143,6 +143,18 @@ body {
     }
   }
 
+  .left-content-narrow {
+    @media (min-width: 576px) {
+      max-width: calc(100% - 5px);
+      margin: auto;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 30%;
+      float: left;
+    }
+  }
+
   .right-content {
     @media (min-width: 576px) {
       margin: auto;
@@ -151,6 +163,18 @@ body {
 
     @media (min-width: 1200px) {
       max-width: 45%;
+      float: right;
+    }
+  }
+
+  .right-content-wide {
+    @media (min-width: 576px) {
+      margin: auto;
+      max-width: calc(100% - 5px);
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 65%;
       float: right;
     }
   }

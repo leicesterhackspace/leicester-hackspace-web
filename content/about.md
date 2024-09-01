@@ -7,54 +7,31 @@ The Hackspace is essentially a shared workshop run by the members for the member
 
 Imagine you had five friends with sets of tools, you all decided to get together and rent a double garage where you
 would each work on your own projects in a shared space. You share the cost of rent and utilities. It’s not a service so
-none of you are obliged to use the space or to help each other but it’s there when you want to use it. As you are
+none of you are obliged to use the space or to help each other, but it’s there when you want to use it. As you are
 friends you might also choose to help each other every now and again or to teach each other how to do something.
 
-The Hackspace is just like that but instead of five members as of Jan 2019 we currently have 130 members.
+The Hackspace is just like that but instead of five members as of 2024 we currently have over 150 members.
 
-There is no minimum membership fee,
-> "We trust our members to pay what they can afford for the way that they are going to use the space".
+## What's the space like?  {.header}
 
-A starting figure is normally £10 per month, currently equivalent to a cup of coffee from Starbucks (or other coffee
-houses) a week.
+During Lockdown one of our members has created a short video tour of the Hackspace which can be viewed on our YouTube
+channel. It's a little out of date, but it still pretty well shows off what we're about.
+{{< youtube id="kRIESLI5iy8" class="yt">}}
 
-This amount can be adjusted up or down depending on changing circumstance and usage. Someone that is hardly in the
-Hackspace or is facing financial hardship can reduce the amount. Alternatively if someone is in the Hackspace every day
-we would expect to pay more than the £10.
+## How can the space used? {.header}
 
-We'd rather have a member than not have them based on their ability to pay and something can always be worked out.
+Provided members keep paying their monthly dues, the hackspace is available 24/7, 365 days a year. Initially new members
+are advised to come in the evenings when others are there until they really know their way around the space, how to
+safely open up and lock up the space after having cleaned up after themselves.
 
-If a member wants to be able to have a storage box they must maintain their monthly membership above a £10 threshold and
-this is actually the only specified amount written in the rules.
+All the tools and equipment are available to every member. But members use the equipment strictly at their own risk and
+are self certifying as to their ability to use it safely. If help is required a member who has experience in using a 
+piece of equipment who will show you how, but that person is NOT a formal technician or a teacher.
 
-Once you become a member the space is as much yours as anyone else.
+Members generally work on their own projects, but it's a great place to socialise, meet like-minded people to acquire
+skills from, or pass skills on to.
 
-Provided members keep paying their monthly dues the space is available 24/7/365. Initially new members are advised to
-come in the evenings when others are there until they really know their way around the space, how to safely open up and
-lock up the space after having cleaned up after themselves.
-
-Members use the equipment strictly at their own risk and are self certifying as to their ability to use it safely. If
-help is required a member who has experience in using a piece of equipment who will show you how, but that person is NOT
-a formal technician or a teacher.
-
-Members generally work on their own projects but it's a great place to socialise, meet like minded people to acquire
-skills from, or pass skills on to .
-
-Members don't just pay money in monthly but also put in time to help run the space.
-
-Legally we require a company secretary and a set of Directors, all elected by the membership, generally for a period of
-3 years. The Directors tend to be responsible for the finances and membership details as these roles require access to
-personal information.
-
-Members can volunteer to help with other tasks such as:
-
-- Maintaining the IT infrastructure
-- Website
-- Wiki
-- Snack space
-- DIY
-- Manning stands at exhibitions
-- Formal and informal talks
+## Our History {.header}
 
 Since its opening in 2014, Leicester Hackspace has had 3 locations. Each move has given us more space to accommodate an
 increase in Membership and space for more equipment.
