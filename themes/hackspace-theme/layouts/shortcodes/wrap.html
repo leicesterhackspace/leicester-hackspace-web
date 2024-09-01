@@ -1,0 +1,9 @@
+{{/*
+A shortcode to wrap multiple markdown elements into a div
+*/}}
+{{/* - variables - */}}
+{{- $attr := (.Get "attr") }}
+
+<div {{ $attr | safe.HTMLAttr}}>
+  {{ .Inner | markdownify }}
+</div>

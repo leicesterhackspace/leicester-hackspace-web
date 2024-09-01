@@ -20,31 +20,43 @@ pageRef = '/about.html'
 weight = 20
 
 [[menus.main]]
-name = 'Contacts'
-pageRef = '/contacts.html'
+name = 'News'
+pageRef = '/news.html'
 weight = 30
 
 [[menus.main]]
-name = 'News'
-pageRef = '/news.html'
+name = 'Find Us'
+pageRef = '/find-us.html'
 weight = 40
 
 [[menus.main]]
-name = 'Membership'
-pageRef = '/membership.html'
+name = 'Join Us'
+pageRef = '/join-us.html'
 weight = 50
+
+[[menus.main]]
+name = 'Contact Us'
+pageRef = '/contact-us.html'
+weight = 60
 
 [[menus.main]]
 name = 'Wiki'
 url = "http://wiki4.leicesterhackspace.org.uk"
-weight = 60
+weight = 70
 
 [[menus.main]]
 name = 'Diary'
 pageRef = '/diary.html'
-weight = 70
+weight = 80
 
 [privacy]
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
