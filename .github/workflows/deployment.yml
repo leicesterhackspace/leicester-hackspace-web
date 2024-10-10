@@ -35,7 +35,7 @@ jobs:
       - name: Build
         run: hugo -D --baseURL "https://leicesterhackspace.org.uk/"
 
-  deploy:
+  deploy: # Handle the connection to the production server
     runs-on: ubuntu-latest
     needs: build
     steps:
