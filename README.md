@@ -3,6 +3,8 @@ The source code for the [Leicester Hackspace website](https://leicesterhackspace
 
 This site uses [Hugo](https://gohugo.io/) static site generation, with a custom theme.
 
+More information is available via the `wiki` tab in GitHub
+
 # Contributing
 We welcome contributions of any kind, please see our [CONTRIBUTING.md](/CONTRIBUTING.md) for guidance on the repository
 and how to contribute.
