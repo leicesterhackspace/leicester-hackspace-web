@@ -46,8 +46,8 @@ jobs:
           username: ${{ secrets.PLESK_SSH_USER }}
           key: ${{ secrets.PLESK_SSH_KEY }}
           script: |
-            "mkdir staging"
-            "sn -l htacess staging/.htaccess"
+            "/bin/mkdir staging"
+            "/bin/ln -l htacess staging/.htaccess"
       - name: SCP files across
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -63,6 +63,6 @@ jobs:
           username: ${{ secrets.PLESK_SSH_USER }}
           key: ${{ secrets.PLESK_SSH_KEY }}
           script: |
-            "mv production to-be-removed"
-            "mv staging production"
-            "rm -rf to-be-removed"
+            "/bin/mv production to-be-removed"
+            "/bin/mv staging production"
+            "/bin/rm -rf to-be-removed"
