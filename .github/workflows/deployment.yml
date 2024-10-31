@@ -54,8 +54,8 @@ jobs:
           host: ${{ secrets.PLESK_SSH_HOST }}
           username: ${{ secrets.PLESK_SSH_USER }}
           key: ${{ secrets.PLESK_SSH_KEY }}
-          source: "public/*"
-          target: "/staging"
+          source: public/**/*
+          target: staging
       - name: SSH and make new version live
         uses: appleboy/ssh-action@v1.0.3
         with:
