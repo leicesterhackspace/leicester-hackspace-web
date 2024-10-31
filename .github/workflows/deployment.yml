@@ -47,7 +47,7 @@ jobs:
           key: ${{ secrets.PLESK_SSH_KEY }}
           script: |
             mkdir staging
-            ln -l htacess staging/.htaccess
+            ln -s htacess staging/.htaccess
       - name: SCP files across
         uses: appleboy/scp-action@v0.1.7
         with:
