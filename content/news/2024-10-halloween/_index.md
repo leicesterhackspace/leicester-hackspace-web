@@ -8,7 +8,8 @@ I cannot believe it has been a year since our last post!
 
 We went to create-a-con at the LCB depot in March, attended by several of our members and we had lots of visitors.
 
-Throughout the year we have held Raspberry PI Jams which have been well attended, demonstrating the new PI5, the AI Hat and the Pico 2.
+Throughout the year we have held Raspberry PI Jams which have been well attended, demonstrating the new PI5, the AI
+Hat and the Pico 2.
 
 Our next one is November when hopefully we will have the new AI camera to demonstrate.
 
