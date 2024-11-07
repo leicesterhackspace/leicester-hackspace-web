@@ -49,24 +49,15 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: website
-          path: website
-      - name: SSH and prepare staging folder
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.PLESK_SSH_HOST }}
-          username: ${{ secrets.PLESK_SSH_USER }}
-          key: ${{ secrets.PLESK_SSH_KEY }}
-          script: |
-            mkdir staging
-            ln -s htacess staging/.htaccess
+          path: staging
       - name: SCP files across
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.PLESK_SSH_HOST }}
           username: ${{ secrets.PLESK_SSH_USER }}
           key: ${{ secrets.PLESK_SSH_KEY }}
-          source: website/**/*
-          target: staging
+          source: "staging/*,staging/**/*"
+          target: /var/www/vhosts/leicesterhackspace.org.uk
       - name: SSH and make new version live
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -74,6 +65,7 @@ jobs:
           username: ${{ secrets.PLESK_SSH_USER }}
           key: ${{ secrets.PLESK_SSH_KEY }}
           script: |
+            ln -s htacess staging/.htaccess
             mv production to-be-removed
             mv staging production
             rm -rf to-be-removed
