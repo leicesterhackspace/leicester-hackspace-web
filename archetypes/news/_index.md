@@ -1,6 +1,6 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = {{ .Date }}
+date = '{{ .Date }}'
 type = "posts"
 draft = true
 +++
