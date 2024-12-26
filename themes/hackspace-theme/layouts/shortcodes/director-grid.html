@@ -1,0 +1,19 @@
+<div class="director-grid">
+    {{ range .Site.Data.directors }}
+        <div class="director">
+            {{- $img := (resources.Get .image) -}}
+            {{- if $img -}}
+            {{- $img = $img.Resize "700x jpg" -}}
+            <img src="{{ $img.RelPermalink }}" alt="{{ .name }}">
+            {{- else -}}
+              <img src="" alt="{{ .name }}">
+                {{/*                {{- errorf "Failed to find image src \"%s\"" (.image) -}}*/}}
+            {{- end -}}
+            <div class="dir-body">
+                <h3>{{ .name }}</h3>
+                <p>{{ .role }}</p>
+                <p>{{ .date }}</p>
+            </div>
+        </div>
+    {{ end }}
+</div>

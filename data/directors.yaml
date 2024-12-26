@@ -1,0 +1,33 @@
+- name: Tony
+  role: Secretary
+  image: img/directors/tony.png
+  date: "6 April 2016"
+- name: Steve
+  role: Membership
+  image: img/directors/steve.png
+  date: "14 March 2018"
+- name: Richard
+  role: Treasurer
+  image: img/directors/richard.png
+  date: "14 March 2018"
+- name: Bill
+  role: Treasurer
+  image: img/directors/paul.png
+  date: "14 March 2018"
+- name: Hopo
+  image: img/directors/hopo.png
+  date: "23 February 2022"
+- name: Sophie
+  image: img/directors/sophie.png
+  date: "23 February 2022"
+- name: Nikki
+  role: Membership
+  image: img/directors/nikki.png
+  date: "6 September 2023"
+- name: Andy
+  image: img/directors/andy.png
+  date: "30 October 2024"
+- name: Jacob
+  role: IT Director
+  image: img/directors/jacob.jpg
+  date: "30 October 2024"
