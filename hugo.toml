@@ -15,28 +15,28 @@ weight = 10
     icon = 'img/hackspace-logo-inverted.svg'
 
 [[menus.main]]
-name = 'About'
+name = 'About Us'
 pageRef = '/about.html'
 weight = 20
 
 [[menus.main]]
-name = 'News'
-pageRef = '/news.html'
-weight = 30
-
-[[menus.main]]
 name = 'Find Us'
 pageRef = '/find-us.html'
-weight = 40
+weight = 30
 
 [[menus.main]]
 name = 'Join Us'
 pageRef = '/join-us.html'
-weight = 50
+weight = 40
 
 [[menus.main]]
 name = 'Contact Us'
 pageRef = '/contact-us.html'
+weight = 50
+
+[[menus.main]]
+name = 'News'
+pageRef = '/news.html'
 weight = 60
 
 [[menus.main]]

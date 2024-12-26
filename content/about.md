@@ -1,5 +1,5 @@
 +++
-title = 'About'
+title = 'About Us'
 date = 2023-11-16T20:35:13Z
 +++
 
