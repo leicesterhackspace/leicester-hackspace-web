@@ -26,13 +26,24 @@ body {
   }
 
   footer {
-    border-top: 1px solid #222;
+    border-top: 2px inset black;
     margin-top: 1rem;
 
-    background-color: #2c2c2c;
+    background-color: #1c1c1c;
     color: white;
 
-    height: 100px;
+    a {
+      color: forestgreen;
+    }
+
+    .footer-left {
+      float: left;
+    }
+
+    .footer-right {
+      float: right;
+      text-align: right;
+    }
   }
 
   .container {
@@ -126,6 +137,10 @@ body {
   a {
     color: #00e;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   /* Utils */
