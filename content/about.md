@@ -40,24 +40,20 @@ including: Handling how money is spent, paying for the space, reporting to Compa
 We run quarterly and annual general meetings that all members are welcome to in order to update our members on the 
 status of The Hackspace, as well as to transparently make large decisions with membership input.
 
-### Our Current Directors
-
-{{< director-grid >}}
-
 ## Our History {.header}
 
 Since our opening in 2014, Leicester Hackspace has had 3 locations. Each move has given us more space to accommodate an
 increase in Membership and space for more equipment.
 
-{{< img src="img/hackspace-1.0.png" title="Version 1.0 of the Hackspace" >}}
+{{< img src="img/hackspace-1.0.png" title="Version 1.0 of the Hackspace" align="center" >}}
 
 Our first premises, shown above, was at the Makers Yard on Rutland St.
 
-{{< img src="img/hackspace-2.0.jpg" title="Version 2.0 of the Hackspace" >}}
+{{< img src="img/hackspace-2.0.jpg" title="Version 2.0 of the Hackspace" align="center" >}}
 
 We then moved to the De Montfort University Innovation Centre.
 
-{{< img src="img/hackspace-3.0.jpg" title="Version 3.0 of the Hackspace" >}}
+{{< img src="img/hackspace-3.0.jpg" title="Version 3.0 of the Hackspace" align="center" >}}
 
 Finally, in December 2017 we moved to premises on the Faircharm Trading Estate, where we remain today. This gave us 
 space for heavy duty woodworking equipment and the prospects of a Laser Cutter.
