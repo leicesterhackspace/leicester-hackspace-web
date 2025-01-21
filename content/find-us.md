@@ -10,7 +10,7 @@ Evelyn Drive,
 LE3 2BU
 
 The hackspace is the last unit on the Faircharm Industrial Estate, just off Narborough road. This is right at the end of
-the island so you'll have to follow Evelyn Drive the whole way round. We have our logo on a big sign above the door so 
+the island so you'll have to follow Evelyn Drive the whole way round. We have our logo on a big sign above the door so
 you can't miss us.
 {{< /wrap >}}
 
