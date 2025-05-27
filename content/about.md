@@ -18,6 +18,10 @@ During Lockdown one of our members has created a short video tour of the Hackspa
 channel. It's a little out of date, but it still pretty well shows off what we're about.
 {{< youtube id="kRIESLI5iy8" class="yt">}}
 
+We do atleast have some (mostly) more up-to-date images showing off the space
+
+{{< groupimg images="img/space-pics" rowHeight="245px" limitColumns="true" >}}
+
 ## How can the space used? {.header}
 
 All members of The Hackspace have access to the space 24/7, 365 days a year. Initially new members
