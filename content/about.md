@@ -18,7 +18,7 @@ During Lockdown one of our members has created a short video tour of the Hackspa
 channel. It's a little out of date, but it still pretty well shows off what we're about.
 {{< youtube id="kRIESLI5iy8" class="yt">}}
 
-We do atleast have some (mostly) more up-to-date images showing off the space
+We do at least have some (mostly) more up-to-date images showing off the space
 
 {{< groupimg images="img/space-pics" rowHeight="245px" limitColumns="true" >}}
 
@@ -36,13 +36,14 @@ members who will have experience in using any piece of equipment who would be ha
 Members generally work on their own projects, but it's a great place to socialise, meet like-minded people to acquire
 skills from, or pass skills on to.
 
-## Who's currently in charge? {.header}
+## Who's in charge? {.header}
 Leicester Hackspace is run by The Directors, who are unpaid, elected officials who are registered as directors of the
 Leicester Hackspace Ltd company. It is the directors responsibility to handle the company side of the hackspace,
-including: Handling how money is spent, paying for the space, reporting to Companies House, setting rules, etc. etc...
+including: Handling how money is spent, paying for the space, reporting to Companies House, maintaining the space, etc,
+etc...
 
-We run quarterly and annual general meetings that all members are welcome to in order to update our members on the
-status of The Hackspace, as well as to transparently make large decisions with membership input.
+We run quarterly and annual general meetings that all members are welcome and encouraged to join, where larger
+decisions for the Hackspace are made with the membership.
 
 ## Our History {.header}
 

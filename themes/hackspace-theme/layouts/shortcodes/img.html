@@ -17,7 +17,7 @@
 {{- $alt := .Get "alt" -}}
 {{- $alignment := or (.Get "align") "left" -}}
 
-{{/* - Derrived - */}}
+{{/* - Derived - */}}
 {{- $img := or (.Page.Resources.Get $src) (resources.Get $src) -}}
 
 {{- if not (in $alignments $alignment) -}}

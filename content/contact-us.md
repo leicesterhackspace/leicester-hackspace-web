@@ -4,9 +4,8 @@ date = 2023-11-16T20:35:48Z
 # cspell:ignore leicesterhackspace
 +++
 
-If you wish to get in contact with us, you can reach us on any of our social media:  
-Twitter: [@LeicesterHack](https://www.twitter.com/LeicesterHack)  
-Facebook: [www.facebook.com/LeicesterHackspace](https://www.facebook.com/LeicesterHackspace)
+If you wish to get in contact with us, you can reach us via our facebook page:
+[www.facebook.com/LeicesterHackspace](https://www.facebook.com/LeicesterHackspace)
 
 Or by email:  
 General Enquiries: [info@leicesterhackspace.org.uk](mailto:info@leicesterhackspace.org.uk)  
