@@ -1,6 +1,7 @@
 +++
 title = 'Contact Us'
 date = 2023-11-16T20:35:48Z
+aliases = ['contacts']
 # cspell:ignore leicesterhackspace
 +++
 

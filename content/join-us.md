@@ -1,6 +1,7 @@
 +++
 title = 'Join Us'
 date = 2024-09-01T00:38:29Z
+aliases = ['membership']
 +++
 
 ## What are the benefits of membership? {.header}
