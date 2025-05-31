@@ -30,8 +30,8 @@ hackspace, as well as finances, and membership details as these roles require ac
 ## OK, I’m in! {.header}
 Great! But hold on just a moment there before you fully commit.  
 Prospective members should first come along to one of our [open days on Tuesday evenings](/diary). You can just turn up
-between 7 and 9pm, please let us know if you plan to visit by email [membership@leicesterhackspace.org.uk](mailto:membership@leicesterhackspace.org.uk)
-so we can make sure someone's prepared to show you around.
+between 7pm and 9pm, but please let us know if you plan to visit by email [membership@leicesterhackspace.org.uk](mailto:membership@leicesterhackspace.org.uk)
+so we can make sure someone is prepared to show you around.
 
 You'll get the opportunity to have a look at the space, see what equipment we have available, chat with current members
 and confirm that you want to join.
