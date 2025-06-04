@@ -17,8 +17,6 @@ errorf
 shortcode
 shortcodes
 webserver
-xmark
-markdownify
 
 # Names
 Creat       # Creat-a-Con

@@ -56,10 +56,6 @@ nav {
 
     flex-direction: column;
 
-    #nav-wrap a {
-      font-size: 1.5rem;
-    }
-
     #nav-mobile {
       display: flex;
       justify-content: space-between;
@@ -67,49 +63,20 @@ nav {
 
       max-height: 100px;
 
-      > :first-child {
-        height: 70px;
-        width: 70px;
+      * {
         margin: 20px;
       }
 
-      .nav-hamburger {
-        position: relative;
-        height: 100px;
-        width: 100px;
+      :first-child {
+        height: 70px;
+        width: 70px;
+      }
 
-        svg {
-          position: absolute;
-          width: 50px;
-          height: 50px;
-          top: 25px;
-          left: 25px;
-          color: white;
+      :last-child {
+        height: 50px;
+        width: 50px;
 
-          transition: opacity 300ms, rotate 300ms ease-in-out;
-
-          &:last-child {
-            opacity: 0;
-          }
-        }
-
-        &.nav-toggled {
-          svg {
-            rotate: 180deg;
-
-            &:first-child {
-              opacity: 0;
-            }
-
-            &:last-child {
-              opacity: 1;
-            }
-          }
-        }
-
-        &:hover {
-          background-color: #0000001e;
-        }
+        color: white;
       }
     }
 
