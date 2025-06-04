@@ -1,0 +1,21 @@
+.img-container {
+  width: 100%;
+  display: block;
+
+  @media (min-width: 992px) {
+    width: 75%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+
+  img {
+    display: block;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}

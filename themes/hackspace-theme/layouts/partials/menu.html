@@ -16,8 +16,10 @@ Renders a menu for the given menu ID.
             {{- with resources.Get site.Params.siteImage -}}
                 {{ (. | minify).Content | safeHTML }}
             {{- end -}}
-
-            {{ "static/icons/fas-bars.svg" | readFile | safeHTML }}
+            <div class="nav-hamburger">
+                {{ "static/icons/fas-bars.svg" | readFile | safeHTML }}
+                {{ "static/icons/fas-xmark.svg" | readFile | safeHTML }}
+            </div>
         </div>
         <div id="nav-wrap">
             {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}

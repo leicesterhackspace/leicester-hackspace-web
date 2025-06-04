@@ -1,34 +1,47 @@
 {{/*
-    This shortcode is heavily inspired by 
+    This shortcode is heavily inspired by
     https://www.brycewray.com/posts/2022/06/responsive-optimized-images-hugo/
     Although some personal adjustments have been made
 */}}
 {{/* cspell:ignore LQIP */}}
-{{/* - variables - */}}
+{{/* - Constants - */}}
 {{- $sizes := slice "365" "550" "730" "1460" -}}
+{{- $alignments := slice "left" "center" "right" -}}
 {{- $imgClass := "img animate-fade" -}}
 {{- $sizesAttr := "(min-width: 1200px) 1460px, (max-width: 365px) 365px, (max-width: 550px) 550px,  730px" -}}
+
+{{/* - Parameters - */}}
+{{- $bonusClass := or (.Get "class") "" -}}
 {{- $imgBase := or (.Get "imgBase") "" -}}
 {{- $src := printf "%s%s" $imgBase (.Get "src") -}}
-{{- $img := or (.Page.Resources.Get $src) (resources.Get $src) -}}
 {{- $alt := .Get "alt" -}}
-{{/* ---------------- */}}
+{{- $alignment := or (.Get "align") "left" -}}
+
+{{/* - Derived - */}}
+{{- $img := or (.Page.Resources.Get $src) (resources.Get $src) -}}
+
+{{- if not (in $alignments $alignment) -}}
+    {{- errorf "Unknown alignment \"%s\"" $alignment -}}
+{{ end }}
+
 {{- if $img -}}
 {{/*
-	Create a 640-pixel-wide JPG of the image that will serve 
-    as the "fallback" image for that tiny percentage of browsers 
+	Create a 640-pixel-wide JPG of the image that will serve
+    as the "fallback" image for that tiny percentage of browsers
     that don't understand the HTML `picture` tag.
 */}}
 {{- $fallbackImg := $img.Resize "640x jpg" -}}
+
 {{/*
     LQIP = Low Quality Image Placeholder
-	Create a 20-pixel-wide LQIP and turn it into Base64-encoded data, 
+	Create a 20-pixel-wide LQIP and turn it into Base64-encoded data,
     which is better for performance and caching.
 */}}
 {{- $LQIP_img := $img.Resize "20x jpg" -}}
+
 {{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
 {{- $LQIP_css := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
-<div class="relative bg-center img-container" style="{{ $LQIP_css | safeCSS }}">
+<div class="relative bg-center img-container {{$bonusClass}} align-{{$alignment}}" style="{{ $LQIP_css | safeCSS }}">
     <picture>
         <source
             type="image/webp"

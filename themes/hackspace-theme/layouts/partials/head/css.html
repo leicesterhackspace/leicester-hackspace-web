@@ -1,6 +1,6 @@
 {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
 {{ $opts2 := dict "transpiler" "dartsass" "targetPath" "css/custom.css" }}
-{{- with resources.Get "sass/main.scss" }}
+{{- with resources.Get "sass/style.scss" }}
     {{- $css := . | toCSS $opts }}
 
     {{- with resources.Get "sass/custom.scss" }}

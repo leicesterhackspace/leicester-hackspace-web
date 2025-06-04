@@ -1,0 +1,65 @@
+.img-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+
+  .img-container {
+    display: block;
+    margin: 5px 0;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    width: auto;
+    height: auto;
+  }
+
+  .fig-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: fit-content;
+    height: 100%;
+
+    .low-qual-image-wrapper {
+      width: auto;
+      height: 100%;
+
+      picture[data-large] {
+        cursor: pointer;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  figcaption {
+    margin: 10px 0;
+  }
+
+
+  &.limit-columns .img-container {
+    max-width: calc(100% - 5px);
+    flex-basis: 100%;
+
+    @media (max-width: 992px) {
+      height: auto !important;
+    }
+
+    @media (min-width: 992px) {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    @media (min-width: 1200px) {
+      flex-basis: 32%;
+      max-width: 32%;
+    }
+  }
+}

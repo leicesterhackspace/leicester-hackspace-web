@@ -1,36 +1,39 @@
 {{/*
-    This shortcode is initially inspired by 
+    This shortcode is initially inspired by
     https://www.brycewray.com/posts/2022/06/responsive-optimized-images-hugo/
     Adjustments have been made.
 */}}
 {{/* cspell:ignore LQIP */}}
 {{/* - variables - */}}
 {{- $imgClass := "animate-fade" -}}
+{{- $extraClasses := or (.Get "class") "" -}}
+{{- $images := or (resources.Match (printf "%s/*.*" (.Get "images"))) (.Page.Resources.ByType "image") -}}
 {{- $ignore := or (.Get "ignore") slice "" -}}
-{{- $include := or (.Get "include") slice "" -}}
 {{- $widthParam := or (.Get "width") 730 -}}
+{{- $imageHeight := or (.Get "rowHeight") "" -}}
+{{- $limitColumns := or (.Get "limitColumns") "false" -}}
 {{/* ---------------- */}}
-<div class="img-group">
-{{- range .Page.Resources.ByType "image" -}}
+<div class="img-group {{ cond ($limitColumns | not | not) "limit-columns" "" }}">
+{{- range $images -}}
 {{- if not (collections.In $ignore .Name) -}}
 {{- $width := cast.ToString (math.Min $widthParam .Width) -}}
 {{/*
-	Create a 640-pixel-wide JPG of the image that will serve 
-    as the "fallback" image for that tiny percentage of browsers 
+	Create a 640-pixel-wide JPG of the image that will serve
+    as the "fallback" image for that tiny percentage of browsers
     that don't understand the HTML `picture` tag.
 */}}
 {{- $fallbackImg := .Resize "640x jpg" -}}
 {{/*
     LQIP = Low Quality Image Placeholder
-	Create a 20-pixel-wide LQIP and turn it into Base64-encoded data, 
+	Create a 20-pixel-wide LQIP and turn it into Base64-encoded data,
     which is better for performance and caching.
 */}}
 {{- $LQIP_img := .Resize "20x jpg" -}}
 {{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-{{- $LQIP_css := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-repeat: no-repeat; width: fit-content; height: fit-content; " -}}
+{{- $LQIP_css := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-repeat: no-repeat; background-size: contain; background-position: center;" -}}
 {{/*
     If the Image has Exif data, and contains the ImageDescription tag,
-    use it as the image's alt attribute, and provide a caption 
+    use it as the image's alt attribute, and provide a caption
     under the image. Otherwise, set the alt attribute to the file
     name
 */}}
@@ -39,25 +42,30 @@
 {{- with .Exif -}}{{- if .Tags.ImageDescription -}}
 {{- $caption_tag = (printf "<figcaption>%s</figcaption>" .Tags.ImageDescription) | safeHTML -}}{{- $alt_tag = printf "alt=%q" .Tags.ImageDescription  -}}
 {{- end -}}{{- end -}}
+
 {{/* ---------------- */}}
-<figure class="bg-center img-container" style="{{ $LQIP_css | safeCSS }}">
-    <picture>
-        <source
-            type="image/webp"
-            srcset="{{ (.Resize (printf "%sx%s" $width " webp")).RelPermalink }}"
-        />
-        <source
-            type="image/jpeg"
-            srcset="{{ (.Resize (printf "%sx%s" $width " jpeg")).RelPermalink }}"
-        />
-        <img class="{{ $imgClass }}"
-            style="max-width: {{ $width }}px"
-            src="{{ $fallbackImg.RelPermalink }}"
-            loading="lazy"
-            {{ $alt_tag | safeHTMLAttr }}
-        />
-    </picture>
-    {{- $caption_tag -}}
+<figure class="bg-center img-container" style="{{ cond ($imageHeight | not | not) (printf "height: %s;" $imageHeight) "" | safeCSS}}">
+    <div class="fig-container">
+        <div class="low-qual-image-wrapper" style="{{ $LQIP_css | safeCSS }}">
+        <picture data-large="{{ .RelPermalink }}">
+            <source
+                type="image/webp"
+                srcset="{{ (.Resize (printf "%sx%s" $width " webp")).RelPermalink }}"
+            />
+            <source
+                type="image/jpeg"
+                srcset="{{ (.Resize (printf "%sx%s" $width " jpeg")).RelPermalink }}"
+            />
+            <img class="{{ $imgClass }}"
+                style="max-width: {{ $width }}px;"
+                src="{{ $fallbackImg.RelPermalink }}"
+                loading="lazy"
+                {{ $alt_tag | safeHTMLAttr }}
+            />
+        </picture>
+        </div>
+        {{- $caption_tag -}}
+    </div>
 </figure>
 {{- end -}}
 {{- end -}}

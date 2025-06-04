@@ -1,0 +1,229 @@
+@use "sass:map";
+
+/* ================================== */
+/* Base Generated Colours             */
+/* ================================== */
+
+// Generated using https://themes.skeleton.dev/themes/create
+$color-primary-map: (
+  50: rgb(255 77 77),
+  100: rgb(245 62 62),
+  200: rgb(235 46 46),
+  300: rgb(224 31 31),
+  400: rgb(214 15 15),
+  500: rgb(204 0 0),
+  600: rgb(188 0 0),
+  700: rgb(172 0 0),
+  800: rgb(157 0 0),
+  900: rgb(141 0 0),
+  950: rgb(125 0 0),
+);
+
+$color-primary-contrast-dark: rgb(0 0 0);
+$color-primary-contrast-light: rgb(255 255 255);
+$color-primary-contrast-map: (
+  50: $color-primary-contrast-dark,
+  100: $color-primary-contrast-dark,
+  200: $color-primary-contrast-dark,
+  300: $color-primary-contrast-light,
+  400: $color-primary-contrast-light,
+  500: $color-primary-contrast-light,
+  600: $color-primary-contrast-light,
+  700: $color-primary-contrast-light,
+  800: $color-primary-contrast-light,
+  900: $color-primary-contrast-light,
+  950: $color-primary-contrast-light
+);
+
+$color-secondary-map: (
+  50: rgb(46 154 154),
+  100: rgb(37 148 148),
+  200: rgb(28 141 141),
+  300: rgb(18 135 135),
+  400: rgb(9 128 128),
+  500: rgb(0 122 122),
+  600: rgb(0 113 113),
+  700: rgb(0 103 103),
+  800: rgb(0 94 94),
+  900: rgb(0 84 84),
+  950: rgb(0 75 75),
+);
+
+$color-secondary-contrast-dark: rgb(0 0 0);
+$color-secondary-contrast-light: rgb(255 255 255);
+$color-secondary-contrast-map: (
+  50: $color-secondary-contrast-dark,
+  100: $color-secondary-contrast-dark,
+  200: $color-secondary-contrast-dark,
+  300: $color-secondary-contrast-dark,
+  400: $color-secondary-contrast-light,
+  500: $color-secondary-contrast-light,
+  600: $color-secondary-contrast-light,
+  700: $color-secondary-contrast-light,
+  800: $color-secondary-contrast-light,
+  900: $color-secondary-contrast-light,
+  950: $color-secondary-contrast-light
+);
+$color-tertiary-map: (
+  50: rgb(183 238 72),
+  100: rgb(172 228 58),
+  200: rgb(161 219 43),
+  300: rgb(149 209 29),
+  400: rgb(138 200 14),
+  500: rgb(127 190 0),
+  600: rgb(117 175 0),
+  700: rgb(107 160 0),
+  800: rgb(97 146 0),
+  900: rgb(87 131 0),
+  950: rgb(77 116 0),
+);
+
+$color-tertiary-contrast-dark: rgb(0 0 0);
+$color-tertiary-contrast-light: rgb(255 255 255);
+$color-tertiary-contrast-map: (
+  50: $color-tertiary-contrast-dark,
+  100: $color-tertiary-contrast-dark,
+  200: $color-tertiary-contrast-dark,
+  300: $color-tertiary-contrast-dark,
+  400: $color-tertiary-contrast-dark,
+  500: $color-tertiary-contrast-dark,
+  600: $color-tertiary-contrast-dark,
+  700: $color-tertiary-contrast-dark,
+  800: $color-tertiary-contrast-dark,
+  900: $color-tertiary-contrast-dark,
+  950: $color-tertiary-contrast-light
+);
+
+$color-success-map: (
+  50: rgb(61 204 61),
+  100: rgb(49 196 49),
+  200: rgb(37 188 37),
+  300: rgb(24 179 24),
+  400: rgb(12 171 12),
+  500: rgb(0 163 0),
+  600: rgb(0 150 0),
+  700: rgb(0 138 0),
+  800: rgb(0 125 0),
+  900: rgb(0 113 0),
+  950: rgb(0 100 0),
+);
+
+$color-success-contrast-dark: rgb(0 0 0);
+$color-success-contrast-light: rgb(255 255 255);
+$color-success-contrast-map: (
+  50: $color-success-contrast-dark,
+  100: $color-success-contrast-dark,
+  200: $color-success-contrast-dark,
+  300: $color-success-contrast-dark,
+  400: $color-success-contrast-dark,
+  500: $color-success-contrast-dark,
+  600: $color-success-contrast-dark,
+  700: $color-success-contrast-dark,
+  800: $color-success-contrast-dark,
+  900: $color-success-contrast-dark,
+  950: $color-success-contrast-light
+);
+
+$color-warning-map: (
+  50: rgb(255 158 77),
+  100: rgb(245 145 62),
+  200: rgb(235 132 46),
+  300: rgb(224 118 31),
+  400: rgb(214 105 15),
+  500: rgb(204 92 0),
+  600: rgb(188 85 0),
+  700: rgb(172 78 0),
+  800: rgb(157 71 0),
+  900: rgb(141 64 0),
+  950: rgb(125 57 0),
+);
+
+$color-warning-contrast-dark: rgb(0 0 0);
+$color-warning-contrast-light: rgb(255 255 255);
+$color-warning-contrast-map: (
+  50: $color-warning-contrast-dark,
+  100: $color-warning-contrast-dark,
+  200: $color-warning-contrast-dark,
+  300: $color-warning-contrast-dark,
+  400: $color-warning-contrast-dark,
+  500: $color-warning-contrast-dark,
+  600: $color-warning-contrast-light,
+  700: $color-warning-contrast-light,
+  800: $color-warning-contrast-light,
+  900: $color-warning-contrast-light,
+  950: $color-warning-contrast-light
+);
+
+$color-error-map: (
+  50: rgb(211 0 0),
+  100: rgb(189 0 0),
+  200: rgb(168 0 0),
+  300: rgb(146 0 0),
+  400: rgb(125 0 0),
+  500: rgb(103 0 0),
+  600: rgb(95 0 0),
+  700: rgb(88 1 1),
+  800: rgb(80 1 1),
+  900: rgb(73 2 2),
+  950: rgb(65 2 2),
+);
+
+$color-error-contrast-dark: rgb(0 0 0);
+$color-error-contrast-light: rgb(255 255 255);
+$color-error-contrast-map: (
+  50: $color-error-contrast-dark,
+  100: $color-error-contrast-dark,
+  200: $color-error-contrast-dark,
+  300: $color-error-contrast-dark,
+  400: $color-error-contrast-light,
+  500: $color-error-contrast-light,
+  600: $color-error-contrast-light,
+  700: $color-error-contrast-light,
+  800: $color-error-contrast-light,
+  900: $color-error-contrast-light,
+  950: $color-error-contrast-light
+);
+
+$color-surface-map: (
+  50: rgb(255 255 255),
+  100: rgb(231 231 231),
+  200: rgb(207 207 207),
+  300: rgb(184 184 184),
+  400: rgb(160 160 160),
+  500: rgb(136 136 136),
+  600: rgb(114 114 114),
+  700: rgb(93 93 93),
+  800: rgb(71 71 71),
+  900: rgb(50 50 50),
+  950: rgb(28 28 28)
+);
+
+$color-surface-contrast-dark: rgb(0 0 0);
+$color-surface-contrast-light: rgb(255 255 255);
+$color-surface-contrast-map: (
+  50: $color-surface-contrast-dark,
+  100: $color-surface-contrast-dark,
+  200: $color-surface-contrast-dark,
+  300: $color-surface-contrast-dark,
+  400: $color-surface-contrast-dark,
+  500: $color-surface-contrast-dark,
+  600: $color-surface-contrast-light,
+  700: $color-surface-contrast-light,
+  800: $color-surface-contrast-light,
+  900: $color-surface-contrast-light,
+  950: $color-surface-contrast-light
+);
+
+$color-primary: map.get($color-primary-map, 500);
+$color-secondary: map.get($color-secondary-map, 500);
+$color-tertiary: map.get($color-tertiary-map, 500);
+$color-success: map.get($color-success-map, 500);
+$color-warning: map.get($color-warning-map, 500);
+$color-error: map.get($color-error-map, 500);
+
+$color-primary-contrast: map.get($color-primary-contrast-map, 500);
+$color-secondary-contrast: map.get($color-secondary-contrast-map, 500);
+$color-tertiary-contrast: map.get($color-tertiary-contrast-map, 500);
+$color-success-contrast: map.get($color-success-contrast-map, 500);
+$color-warning-contrast: map.get($color-warning-contrast-map, 500);
+$color-error-contrast: map.get($color-error-contrast-map, 500);
