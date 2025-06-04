@@ -1,0 +1,12 @@
+/**
+ * Simple fade in from opacity 0 -> 1
+ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

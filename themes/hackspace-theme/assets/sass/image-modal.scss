@@ -1,0 +1,59 @@
+#image-modal[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
+  max-height: 90vh;
+
+  width: max-content;
+  height: min-content;
+
+  border: 1px black solid;
+  background-color: #232323;
+  padding: 5px;
+
+  position: fixed;
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 100;
+
+    border: none;
+    border-radius: 2px;
+    background: #00000033 none;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: #00000066;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      color: white
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    max-width: 89vw;
+    max-height: 89vh;
+    object-fit: contain;
+  }
+}

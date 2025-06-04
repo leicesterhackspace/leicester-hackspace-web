@@ -3,31 +3,25 @@ title = 'Leicester Hackspace'
 date = 2023-11-09T13:49:01Z
 +++
 
-Leicester Hackspace is a venue for makers of digital, electronic, mechanical and creative projects
+Leicester Hackspace is a venue for makers of digital, electronic, mechanical and creative projects.
 
-{{< img src="img/3dprinters.jpg" title="3D Printers" >}}
-
-Like other Hackspaces across the country, we are working to build a community of practical and creative people and
+Like other Hackspaces across the country, we're working to build a community of practical and creative people and
 provide them with a place to pursue their projects, share techniques and concepts and learn new skills.
 
-Members have access to bike repair equipment, computers, a 3D printer, 3D miller/scanner, power tools and many other
+Members have access to bike repair equipment, computers, 3D printers, CNC machines, power tools and many other
 resources 24 hours a day. We also run special courses and events, in programming, arduino, electronics, soldering, and
-more, which are open to members of the public.
+more, for anyone interested in joining.
 
-{{< img src="img/threed.jpg" title="Another angle of the 3D Printers" >}}
-{{< img src="img/laser.jpg" title="Laser Cutter" >}}
-{{< img src="img/engraver.jpg" title="Engraver in action" >}}
-{{< img src="img/boxford.jpg" title="Boxford Engraver" >}}
+{{< groupimg images="img/home" rowHeight="350px" limitColumns="true" >}}
 
-If you have an existing interest in such projects, or wish to learn more, we hope you’ll join!
+{{< wrap attr="class='side-by-side'" markdownify="false" >}}
+{{< wrap attr="style='max-width: 35%'" >}}
+Want to visit? You can find us just off Narborough road, right at the end of Faircharm Industrial Estate. Have a look at
+the [Find Us Page](/find-us) for more information.
 
-Why not check out our virtual tour, created by Max Ruffels, one of our members. If you are still interested, check out
-the membership page for more information.
-
-{{< youtube id="kRIESLI5iy8" class="yt">}}
-
-Checkout the Diary Page to see forthcoming events.
-
-You can also follow us
-on [Facebook](https://www.facebook.com/LeicesterHackspace), [Twitter](https://twitter.com/LeicesterHack)
-and [Meetup](https://www.meetup.com/).
+If you feel we're the kind of place for you, then head to the [Join Us Page](/join-us) to learn what you need to do to
+become a member.
+{{< /wrap >}}
+<!-- markdownlint-disable-next-line -->
+{{< iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.2945587940644!2d-1.1507322222409144!3d52.61852092892922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487760ce12187f65%3A0xbdb5ddd0e2ab2d!2sLeicester%20Hackspace!5e0!3m2!1sen!2suk!4v1703446998606!5m2!1sen!2suk" width="70%" attr="class='right-content-wide' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy=' no-referrer-when-downgrade'" >}}
+{{< /wrap >}}

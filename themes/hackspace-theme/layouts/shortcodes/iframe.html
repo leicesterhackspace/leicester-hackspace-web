@@ -1,3 +1,4 @@
+<!--A shortcode to add an iframe into the markdown content, with some utils for styling-->
 {{- $src := .Get "src" -}}
 {{- if not $src -}}
     {{- errorf "No iframe src provided" -}}
@@ -5,7 +6,7 @@
 {{- $width := or (.Get "width") "600" -}}
 {{- $height := or (.Get "height") "450" -}}
 {{- $attr := "" -}}
-{{- with .Get "attributes" -}}
-    {{- $attr = . | safe.HTMLAttr -}}
+{{- with .Get "attr" -}}
+    {{- $attr = (. | safe.HTMLAttr) -}}
 {{- end -}}
 <iframe src="{{ $src }}" width="{{ $width }}" height="{{ $height }}" style="border:0;" {{ $attr }}></iframe>
