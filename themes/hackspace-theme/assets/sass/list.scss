@@ -3,20 +3,30 @@
     padding: 5px;
     margin: 10px 0;
 
-    h1 {
+    .title {
+      display: flex;
+
+      align-items: baseline;
+      justify-content: space-between;
       margin-top: 2px;
       margin-bottom: 4px;
 
       padding-left: 10px;
+      padding-right: 10px;
+
       width: calc(100% + 20px);
+      max-width: calc(100vw - 40px);
       transform: translateX(-10px);
 
       border-bottom: 1px solid red;
+
+      h1 {
+        margin: 0;
+      }
     }
 
-    .news-footer {
-      display: flex;
-      flex-direction: row-reverse;
+    .content {
+      margin: 0 5px;
     }
   }
 

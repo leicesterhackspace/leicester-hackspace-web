@@ -5,15 +5,17 @@
     {{- $paginator := .Paginate (where .Data.Pages "Type" "posts") .Site.Params.Pagination.postsPerPage -}}
     {{- range $paginator.Pages -}}
         <div class="news-post">
-            <h1>{{ .Title }}</h1>
-            {{ .Content }}
-            <div class="news-footer">
-        <span class="date">
-          {{- $date := .Date -}}
-            {{- $lastmod := .Lastmod -}}
-            {{- .Date.Format "_2 January 2006" -}}
-            {{ if ne $date $lastmod }} (Modified: {{ .Lastmod.Format "3:04 PM _2/01/2006" }}){{ end }}
-        </span>
+            <div class="title">
+                <h1>{{ .Title }}</h1>
+                <span class="date">
+                  {{- $date := .Date -}}
+                    {{- $lastmod := .Lastmod -}}
+                    {{- .Date.Format "_2 January 2006" -}}
+                    {{ if ne $date $lastmod }} (Modified: {{ .Lastmod.Format "3:04 PM _2/01/2006" }}){{ end }}
+                </span>
+            </div>
+            <div class="content">
+                {{ .Content }}
             </div>
         </div>
     {{- end -}}
