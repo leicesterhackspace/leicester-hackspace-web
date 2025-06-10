@@ -1,0 +1,40 @@
+@use "sass:map";
+@use "include/colour";
+
+blockquote {
+  padding: 5px 10px;
+  border-radius: 4px;
+
+  border-left: 15px map.get(colour.$color-surface-map, 200) solid;
+  background-color: map.get(colour.$color-surface-map, 100);
+  filter: drop-shadow( 5px 5px 5px #00000030);
+
+  .dark-mode & {
+    border-left: 15px map.get(colour.$color-surface-map, 700) solid;
+    background-color: map.get(colour.$color-surface-map, 800);
+    filter: none
+  }
+
+  p {
+    margin: 0
+  }
+
+  &.primary {
+    border-left: 15px map.get(colour.$color-primary-map, 500) solid;
+    background-color: map.get(colour.$color-primary-map, 950);
+  }
+
+  &.secondary {
+    border-left: 15px map.get(colour.$color-secondary-map, 500) solid;
+    background-color: map.get(colour.$color-secondary-map, 950);
+  }
+
+  &.tertiary {
+    border-left: 15px map.get(colour.$color-tertiary-map, 500) solid;
+    background-color: map.get(colour.$color-tertiary-map, 950);
+
+    a {
+      color: revert;
+    }
+  }
+}
