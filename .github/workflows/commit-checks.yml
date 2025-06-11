@@ -1,15 +1,8 @@
 name: Check PR
 
 on:
-  pull_request:
-    branches:
-      - develop
   push:
-    branches:
-      - develop
   workflow_dispatch:
-    branches:
-      - develop
 
 jobs:
   build:
