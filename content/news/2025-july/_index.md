@@ -7,9 +7,10 @@ draft = true
 We've had a massive tidy up!
 
 For a little while now, our 3d printing room (The one in the middle) has been a total mess. Every usable surface was
-covered in odd bits and bobs, rubish, and cool hackable components that were impossible to get to:
+covered in odd bits and bobs, rubbish, and cool hackable components that were impossible to get to:
 
-{{< groupimg ignore="after/IMG_20250713_174820.jpg,after/IMG_20250713_174823.jpg,after/IMG_20250713_190433.jpg" rowHeight="300px" limitColumns="false" >}}
+{{< groupimg ignore="after/IMG_20250713_174820.jpg,after/IMG_20250713_174823.jpg,after/IMG_20250713_190433.jpg"
+             rowHeight="300px" limitColumns="false" >}}
 
 With little free table space, this room had become quite difficult to use or to find anything (and remained so for 2+
 years).
@@ -29,7 +30,7 @@ Regardless, we're very happy to have all this table space back for members to us
 with room to walk all the way around both tables!
 
 At the same time as this, we installed an isolator switch on our power switchboard. Previously you could only turn off
-the power to the hackspace via the business downstairs, so this is a huge step to allowing us to work on our electrics 
+the power to the hackspace via the business downstairs, so this is a huge step to allowing us to work on our electrics
 whenever we need!
 
 {{< img src="after/IMG_20250713_190433.jpg" title="Post cleanup" align="center" >}}
