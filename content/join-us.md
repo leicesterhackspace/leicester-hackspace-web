@@ -27,6 +27,9 @@ We also legally require a company secretary and a set of Directors, these roles 
 membership, generally for a period of 3 years. The Directors tend to be responsible for the major decisions for the
 hackspace, as well as finances, and membership details as these roles require access to personal information.
 
+Finally, to become a member, you must be at least 18 years old for safeguarding reasons. Under 18s can come along to the
+hackspace as a guest of their legal guardian. Said guardian will have to become a member though.
+
 ## OK, I’m in! {.header}
 Great! But hold on just a moment there before you fully commit.  
 Prospective members should first come along to one of our [open days on Tuesday evenings](/diary). You can just turn up
