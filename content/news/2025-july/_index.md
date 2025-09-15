@@ -2,7 +2,6 @@
 title = '2025 July - A big tidy'
 date = '2025-07-14T02:49:26+01:00'
 type = "posts"
-draft = true
 +++
 We've had a massive tidy up!
 
