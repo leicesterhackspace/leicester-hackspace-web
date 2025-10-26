@@ -19,6 +19,7 @@ shortcodes
 webserver
 xmark
 markdownify
+warnf
 
 # Names
 Creat       # Creat-a-Con

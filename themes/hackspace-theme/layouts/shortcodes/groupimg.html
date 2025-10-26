@@ -8,12 +8,13 @@
 {{- $imgClass := "animate-fade" -}}
 {{- $extraClasses := or (.Get "class") "" -}}
 {{- $images := or (resources.Match (printf "%s/*.*" (.Get "images"))) (.Page.Resources.ByType "image") -}}
+{{ warnf  "%s/*.*" (.Get "images") }}
 {{- $ignore := or (.Get "ignore") slice "" -}}
 {{- $widthParam := or (.Get "width") 730 -}}
 {{- $imageHeight := or (.Get "rowHeight") "" -}}
 {{- $limitColumns := or (.Get "limitColumns") "false" -}}
 {{/* ---------------- */}}
-<div class="img-group {{ cond ($limitColumns | not | not) "limit-columns" "" }}">
+<div class="img-group {{ cond (eq $limitColumns "true") "limit-columns" "" }}">
 {{- range $images -}}
 {{- if not (collections.In $ignore .Name) -}}
 {{- $width := cast.ToString (math.Min $widthParam .Width) -}}
