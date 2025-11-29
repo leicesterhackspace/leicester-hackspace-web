@@ -13,6 +13,12 @@ nav {
   #nav-wrap {
     display: flex;
     margin: 0;
+    width: 100%;
+
+    .spacer {
+      flex-grow: 1;
+      max-width: 100%;
+    }
 
     a {
       display: flex;
@@ -118,6 +124,10 @@ nav {
       max-height: 0;
       overflow: hidden;
       transition: 200ms ease-in;
+
+      .spacer {
+        display: none;
+      }
 
       a {
         height: 40px;

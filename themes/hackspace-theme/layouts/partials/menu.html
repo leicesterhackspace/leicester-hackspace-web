@@ -9,23 +9,28 @@ Renders a menu for the given menu ID.
 
 {{- $page := .page }}
 {{- $menuID := .menuID }}
+{{- $rightMenuID := .rightMenuID }}
 
-{{- with index site.Menus $menuID }}
-    <nav>
-        <div id="nav-mobile">
-            {{- with resources.Get site.Params.siteImage -}}
-                {{ (. | minify).Content | safeHTML }}
-            {{- end -}}
-            <div class="nav-hamburger">
-                {{ "static/icons/fas-bars.svg" | readFile | safeHTML }}
-                {{ "static/icons/fas-xmark.svg" | readFile | safeHTML }}
-            </div>
+<nav>
+    <div id="nav-mobile">
+        {{- with resources.Get site.Params.siteImage -}}
+            {{ (. | minify).Content | safeHTML }}
+        {{- end -}}
+        <div class="nav-hamburger">
+            {{ "static/icons/fas-bars.svg" | readFile | safeHTML }}
+            {{ "static/icons/fas-xmark.svg" | readFile | safeHTML }}
         </div>
-        <div id="nav-wrap">
+    </div>
+    <div id="nav-wrap">
+        {{- with index site.Menus $menuID }}
             {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </div>
-    </nav>
-{{- end }}
+        {{- end }}
+        <div class="spacer"></div>
+        {{- with index site.Menus $rightMenuID }}
+            {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        {{- end }}
+    </div>
+</nav>
 
 {{- define "partials/inline/menu/walk.html" }}
     {{- $page := .page }}

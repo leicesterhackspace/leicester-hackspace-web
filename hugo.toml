@@ -49,6 +49,11 @@ name = 'Diary'
 pageRef = '/diary.html'
 weight = 80
 
+[[menus.right]]
+name = 'Members Guide'
+url = 'https://rules.leicesterhackspace.org.uk'
+weight = 10
+
 [privacy]
   [privacy.youtube]
     disable = false
