@@ -2,7 +2,6 @@
 title = 'Welcome to 2026'
 date = '2026-01-26T00:00:00Z'
 type = "posts"
-draft = true
 +++
 
 We finished 2025 of with a couple of events. Our regular Christmas Craft event  attended by members and some
