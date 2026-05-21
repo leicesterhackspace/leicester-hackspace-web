@@ -1,5 +1,5 @@
 +++
-title = '2026 Mar Create-a-Con'
+title = 'March 2026 - Create-a-Con'
 date = '2026-04-07T00:00:00Z'
 type = "posts"
 +++
