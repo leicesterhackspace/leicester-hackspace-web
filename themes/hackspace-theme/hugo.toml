@@ -1,5 +1,5 @@
 baseURL = 'https://https://leicesterhackspace.org.uk/'
-languageCode = 'en-gb'
+locale = 'en-GB'
 title = 'The theme for the leicester hackspace website'
 
 [params]

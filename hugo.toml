@@ -1,5 +1,5 @@
 baseURL = 'https://leicesterhackspace.org.uk'
-languageCode = 'en-GB'
+locale = 'en-GB'
 title = 'Leicester Hackspace'
 theme = 'hackspace-theme'
 

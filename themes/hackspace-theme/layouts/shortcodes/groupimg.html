@@ -8,7 +8,6 @@
 {{- $imgClass := "animate-fade" -}}
 {{- $extraClasses := or (.Get "class") "" -}}
 {{- $images := or (resources.Match (printf "%s/*.*" (.Get "images"))) (.Page.Resources.ByType "image") -}}
-{{ warnf  "%s/*.*" (.Get "images") }}
 {{- $ignore := or (.Get "ignore") slice "" -}}
 {{- $widthParam := or (.Get "width") 730 -}}
 {{- $imageHeight := or (.Get "rowHeight") "" -}}
@@ -40,7 +39,7 @@
 */}}
 {{- $alt_tag := printf "alt=%q" .Name -}}
 {{- $caption_tag := "" -}}
-{{- with .Exif -}}{{- if .Tags.ImageDescription -}}
+{{- with .Meta.Exif -}}{{- if .Tags.ImageDescription -}}
 {{- $caption_tag = (printf "<figcaption>%s</figcaption>" .Tags.ImageDescription) | safeHTML -}}{{- $alt_tag = printf "alt=%q" .Tags.ImageDescription  -}}
 {{- end -}}{{- end -}}
 
