@@ -2,7 +2,6 @@
 title = '2026 June  Pi Jam'
 date = '2026-06-29T00:00:00Z'
 type = "posts"
-draft = true
 # cspell:ignore Pimoroni EDSAC meccanum  kevsrobots Maplin
 +++
 On Saturday June 20th we held another Pi Jam with many or our regulars returning and a few new comers.
