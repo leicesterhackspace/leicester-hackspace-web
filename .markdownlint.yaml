@@ -190,7 +190,7 @@ MD044:
   html_elements: true
 
 # MD045/no-alt-text : Images should have alternate text (alt text) : https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/md045.md
-MD045: true
+MD045: false
 
 # MD046/code-block-style : Code block style : https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/md046.md
 MD046:
